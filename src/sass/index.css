@@ -1,20 +1,17 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-.header__list {
-  list-style: none;
-  color: rgb(92, 226, 43);
+.headet__title {
+  color: aqua;
 }
 
-.header__link {
-  text-decoration: none;
-  color: currentColor;
+.header__subtitle {
+  color: crimson;
 }
 
 .footer__list {
   list-style: none;
-  color: blueviolet;
 }
 
 .footer__link {
   text-decoration: none;
-  color: currentColor;
+  color: rgb(86, 5, 20);
 }/*# sourceMappingURL=index.css.map */
