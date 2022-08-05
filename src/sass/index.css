@@ -1,0 +1,17 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.headet__title {
+  color: aqua;
+}
+
+.header__subtitle {
+  color: crimson;
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: rgb(86, 5, 20);
+}/*# sourceMappingURL=index.css.map */
