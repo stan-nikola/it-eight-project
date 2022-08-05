@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://stan-nikola.github.io/project-demo",
+  "homepage": "https://stan-nikola.github.io/it-eight-project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /project-demo/"
+    "build": "parcel build src/*.html --public-url /it-eight-project/"
   },
   "repository": {
     "type": "git",
