@@ -5,4 +5,12 @@
 
 .header__link {
   color: currentColor;
+}
+
+.footer__list {
+  color: rgb(193, 16, 72);
+}
+
+.footer__link {
+  color: currentColor;
 }/*# sourceMappingURL=index.css.map */
