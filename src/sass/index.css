@@ -1,1 +1,52 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';/*# sourceMappingURL=index.css.map */
+@import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --primary-text-color: #FFFFFF;
+  --dark-text-color: #000000;
+  --light-dark-text-color: #907E82;
+  --accent-color: #D41443;
+  --secondary-color: #FFA5BA;
+  --button-hover-bgcolor: #ECEBEB;
+  --main-first-bgcolor: #FFB8CA;
+  --main-secondary-bgcolor: #FFF5F6;
+  --secondary-bgcolor: #FAFAFA;
+  --secondary-dark-color: #E1E1E1;
+  --third-bgcolor: #C2E297;
+  --fourth-bgcolor: #F0D1A5 ;
+  --main-slider-dot-color: #D9D9D9;
+  --accent-slider-dot-color: #C7133E;
+  --second-accent-slider-dot-color: #D31342;
+  --button-second-accent-bgcolor: #D41342;
+  --mobile-menu-line-color: #E18298;
+  --mobile-menu-bgcolor: #E17992;
+  --main-socials-bgcolor: #FEA5BB;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+  color: currentColor;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}/*# sourceMappingURL=index.css.map */
