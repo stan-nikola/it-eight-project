@@ -1,8 +1,28 @@
 /* Advantages */
-.advantages {
-  &__subtitle {
- margin-bottom: 4px;
+$indent: 32px;
+$items: 1;
 
+
+.card-set-advantages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $indent;
+
+}
+
+.advantages {
+  background-color: var(--main-secondary-bgcolor);
+
+&__item {
+    flex-basis: calc((100% - ($indent) * (($items) - 1)) / ($items));
+
+  }
+
+
+  
+  &__subtitle {
+    margin-bottom: 19px;
+  
     font-family: 'Titan One';
     font-weight: 400;
     font-size: 36px;
@@ -11,6 +31,33 @@
     text-transform: uppercase;
 
     color: var(--accent-color);
+  }
+
+  &__subtitle::before {
+    content: '';
+    display: block;
+    margin-bottom: 16px;
+    height: 50px;
+  
+    background-size: contain;
+  }
+
+  &__subtitle--icon-first::before {
+    width: 33px;
+
+    background-image: url(../images/advantages/advantages-1-sm.png);
+  }
+
+  &__subtitle--icon-second::before {
+    width: 50px;
+
+    background-image: url(../images/advantages/advantages-2-sm.png);
+  }
+
+  &__subtitle--icon-third::before {
+    width: 44px;
+
+    background-image: url(../images/advantages/advantages-3-sm.png);
   }
 
   &__desc {
@@ -23,3 +70,10 @@
     color: var(--dark-text-color);
   }
 }
+
+
+
+/* Card-set */
+
+
+
