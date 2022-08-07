@@ -1,0 +1,25 @@
+/* Advantages */
+.advantages {
+  &__subtitle {
+ margin-bottom: 4px;
+
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--accent-color);
+  }
+
+  &__desc {
+    max-width: 230px;
+
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--dark-text-color);
+  }
+}
