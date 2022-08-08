@@ -7,6 +7,10 @@
   @media screen and (min-width: 768px) {
     padding-top: 80px;
   }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+  }
 }
 
 .cont {
@@ -37,8 +41,10 @@
 
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
-    padding-left: 16px;
-    padding-right: 16px;
+    background-image: linear-gradient(to bottom,
+          #FFFFFF 99px,
+          var(--main-secondary-bgcolor) 99px);
+  
   }
 }
 
@@ -77,6 +83,9 @@
     flex-basis: calc((100% - 64px) / 3);
   }
 
+  @media screen and (min-width: 1200px) {
+    padding: 40px 40px;  }
+
   &__title {
     max-width: 80px;
     height: 16px;
@@ -100,6 +109,7 @@
       border-radius: 6px;
     }
 
+     
     &--more-wide {
       max-width: 130px;
       background-color: #C2E297;
@@ -140,6 +150,12 @@
       font-size: 14px;
       line-height: 1.64;
     }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.81;
+      letter-spacing: 0.04em;
+    }
   }
 
   &__days {
@@ -147,6 +163,12 @@
       font-size: 14px;
       line-height: 1.86;
     }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.88;
+      letter-spacing: 0.04em;
+      }
   }
 
   &__hours {
@@ -156,6 +178,11 @@
     @media screen and (min-width: 768px) {
       font-size: 14px;
       line-height: 1.86;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.88;
     }
   }
 
@@ -173,6 +200,11 @@
     @media screen and (min-width: 768px) {
       font-size: 14px;
       line-height: 1.86;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.81;
     }
   }
 
@@ -205,7 +237,6 @@
   padding: 0 18px 0 17px;
   max-width: 161px;
   height: 44px;
-  margin: 0;
 
   font-family: 'DM Sans';
   font-weight: 700;
@@ -221,14 +252,22 @@
 
   @media screen and (min-width: 768px) {
     min-width: 191px;
-    padding: 0 32 0 30px;
+    padding: 0 32px 0 30px;
   }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 198px;
+    padding: 0 36px 0 35px;  }
 
   &__icon {
     stroke: #FFFFFF;
     margin-left: 8px;
 
     @media screen and (min-width: 768px) {
+      margin-left: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
       margin-left: 10px;
     }
   }
@@ -240,13 +279,22 @@
 
     @media screen and (min-width: 768px) {
       min-width: 174px;
-      padding: 0 38 0 38px;
+      padding: 0 38px 0 38px;
+    }
 
+    @media screen and (min-width: 1200px) {
+      min-width: 168px;
+      padding: 0 37px 0 36px;
     }
   }
 
   &__icon--left-margin {
     margin-left: 13px;
+  
+
+    @media screen and (min-width: 1200px) {
+    margin-left: 10px;    
+   }
   }
 
   &:hover {
