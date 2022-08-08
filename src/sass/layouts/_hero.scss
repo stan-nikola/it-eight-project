@@ -1,57 +1,102 @@
 .hero {
-  position: relative;
   background-color: var(--main-first-bgcolor);
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: -70px;
-    left: 675px;
-    display: block;
-    width: 534px;
-    height: 534px;
-    border-radius: 50%;
-    background-color: var(--secondary-color);
-  }
-
   &__container {
+    position: relative;
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 60px;
+    padding-top: 128px;
+    padding-bottom: 158px;
+    overflow: hidden;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 20px;
+      padding-bottom: 60px;
+      overflow: visible;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 25px;
+      left: 36px;
+      width: 346px;
+      height: 344px;
+      border-radius: 50%;
+      background-color: var(--secondary-color);
+
+      @media screen and (min-width: 768px) {
+        width: 335px;
+        height: 333px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        top: -70px;
+        left: 510px;
+        width: 534px;
+        height: 534px;
+      }
+    }
+  }
+
+  &__content-left {
+    z-index: 1;
   }
 
   &__header {
-    width: 277px;
-    margin-bottom: 24px;
+    width: 218px;
+    margin-bottom: 20px;
+
     font-weight: 400;
-    font-size: 38px;
-    line-height: 1.16;
+    font-size: 26px;
+    line-height: 1.15;
     font-family: 'Titan One';
     color: var(--primary-text-color);
     letter-spacing: 0.04em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+      width: 277px;
+      margin-bottom: 24px;
+
+      font-size: 38px;
+      line-height: 1.16;
+    }
   }
 
   &__header-bottom {
-    font-size: 58px;
-    line-height: 0.8;
-    letter-spacing: 0.06em;
+    font-size: 48px;
+    line-height: 0.97;
     color: var(--accent-color);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 58px;
+      line-height: 0.9;
+    }
   }
 
   &__navigation {
     display: flex;
     gap: 12px;
-    margin-bottom: 40px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 40px;
+    }
   }
 
   &__navigation-link {
     display: block;
-    padding: 11px 23px;
+    padding: 11px 15px;
     border-radius: 20px;
-    font-size: 14px;
-    line-height: 1.29;
+
+    font-size: 8px;
+    line-height: 1.25;
+
+    @media screen and (min-width: 1200px) {
+      padding: 11px 25px;
+      font-size: 14px;
+      line-height: 1.29;
+    }
   }
 
   &__products-link {
@@ -69,9 +114,13 @@
   }
 
   &__feature {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
   }
 
   &__feature-text {
@@ -95,9 +144,14 @@
 
   &__content-right {
     position: relative;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
   }
 
-  &__statistic-lins {
+  &__statistic-list {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -142,8 +196,17 @@
 
   &__main-img {
     position: absolute;
-    bottom: -63px;
-    right: 320px;
+    left: 115px;
+    bottom: 0;
+    width: 171px;
+    height: 410px;
+
+    @media screen and (min-width: 1200px) {
+      left: 630px;
+      bottom: 0px;
+      width: 236px;
+      height: 557px;
+    }
   }
 
   &__secondary-img {
