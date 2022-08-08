@@ -469,6 +469,7 @@ address {
 }
 @media screen and (min-width: 768px) {
   .products__list {
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 16px;
@@ -477,6 +478,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .products__list {
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 32px;
@@ -492,14 +494,14 @@ address {
 }
 @media screen and (min-width: 768px) {
   .products__item {
-    flex-basis: calc((100% - var(16px) * 2) / 3);
+    flex-basis: calc((100% - 32px) / 3);
     padding-top: 118px;
     padding-bottom: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
   .products__item {
-    flex-basis: calc((100% - var(32px) * 2) / 3);
+    flex-basis: calc((100% - 64px) / 3);
     padding-top: 165px;
     padding-bottom: 60px;
   }
@@ -529,11 +531,6 @@ address {
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
-@media screen and (min-width: 768px) {
-  .products__name {
-    padding-top: 32px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .products__name {
     font-size: 30px;
@@ -545,17 +542,23 @@ address {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 127px;
+  left: 133px;
   transform: translateY(38px);
-  width: 27px;
+  width: 6px;
   height: 6px;
-  background-image: url(../images/products/dots.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  border-radius: 50%;
+  display: block;
+  background-color: var(--primary-text-color);
+  box-shadow: 10px 0 var(--primary-text-color), -10px 0 var(--primary-text-color);
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) {
   .products__name::after {
-    background-image: url(../images/products/dots@2x.png);
+    left: 105px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__name::after {
+    left: 177px;
   }
 }
 
@@ -592,6 +595,11 @@ address {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .products__name--icecream::before {
+    top: 0;
+    left: 0;
+    transform: translateY(-256px);
+    width: 224px;
+    height: 224px;
     background-image: url(../images/products/products-tab-1.png);
   }
 }
@@ -602,6 +610,11 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .products__name--icecream::before {
+    top: 0;
+    left: 0;
+    transform: translateY(-426px);
+    width: 368px;
+    height: 394px;
     background-image: url(../images/products/products-desc-1.png);
   }
 }
@@ -644,6 +657,11 @@ address {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .products__name--coffee::before {
+    top: 0;
+    left: 0;
+    transform: translateY(-256px);
+    width: 224px;
+    height: 224px;
     background-image: url(../images/products/products-tab-2.png);
   }
 }
@@ -654,6 +672,11 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .products__name--coffee::before {
+    top: 0;
+    left: 0;
+    transform: translateY(-426px);
+    width: 368px;
+    height: 394px;
     background-image: url(../images/products/products-desc-2.png);
   }
 }
@@ -696,6 +719,11 @@ address {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .products__name--milkshake::before {
+    top: 0;
+    left: 0;
+    transform: translateY(-256px);
+    width: 224px;
+    height: 224px;
     background-image: url(../images/products/products-tab-3.png);
   }
 }
@@ -706,6 +734,11 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .products__name--milkshake::before {
+    top: 0;
+    left: 0;
+    transform: translateY(-426px);
+    width: 368px;
+    height: 394px;
     background-image: url(../images/products/products-desc-3.png);
   }
 }
