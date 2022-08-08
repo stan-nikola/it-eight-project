@@ -1,13 +1,6 @@
 .image-list {
     
-    width: 320px;
-        height: 136px;
-        // background: linear-gradient(to bottom,
-        //     #FFF5F6 27px,
-                
-                
-        //         white 27px);
-                
+        
                 display: flex;
                 list-style: none;
                 padding: 0;
@@ -63,14 +56,21 @@
 
 .image-list__item img {
   display: block;
-transition: transform 1s;
+transition: transform 500ms;
   
   
     
     @media screen and (max-width:767px) {
-    width: 43.59px;
+        width: 43.59px;
     
         height: 43.86px;
+
+        
+           
+        
+        
+        
+        
         margin-bottom: 2.5px;
     }
     
@@ -97,6 +97,8 @@ transform: translate(20px, 20px) scale(1.5);
 
 .image-list__item {
     margin-right: 2.5px;
+    
+    height: 100%;
     
     
 
@@ -147,6 +149,7 @@ margin-top: 28px;
             margin-top: 88px;
     
         }
+        
 
     
 }
@@ -226,6 +229,10 @@ height: 89px;
     @media screen and (max-width:767px) {
         width: 89.5px;
             height: 89.61px;
+        
+        
+       
+            
     }
 
     @media screen and (min-width:768px) {
@@ -265,8 +272,5 @@ height: 89px;
             margin-bottom: 8px;
         }
 }
-
-
-
 
 
