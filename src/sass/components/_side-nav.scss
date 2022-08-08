@@ -15,6 +15,10 @@
   transition-duration: var(--transition-duration-modal);
   transition-timing-function: var(--timing-function-main);
 
+  @media screen and (min-width: 768px) {
+    width: 254px;
+  }
+
   &.is-hidden {
     transform: translate(100%);
   }
