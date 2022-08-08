@@ -3,12 +3,58 @@
 }
 
 .about__wrapper {
+
+
+
+    @media screen and (max-width: 767px) {
+
+
+        background-image: url(../images/about/about_fon-s.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position-y: 340px;
+        background-position-x: center;
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/about/about_fon-s@2x.png);
+        }
+
+        @media screen and (min-width: 352px) and (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-position-x: calc(50% + 32px);
+
+
+
+        }
+    }
+
     @media screen and (min-width: 768px) {
         display: flex;
     }
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/about/about_fon-l.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/about/about_fon-l@2x.png);
+        }
+    }
+
 }
 
 .about__picture {
+
+
     @media screen and (min-width: 768px) {
         margin-right: 32px;
     }
