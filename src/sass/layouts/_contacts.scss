@@ -8,8 +8,6 @@
   // #FFF5F6);
 
 
-
-
   outline: 2px solid green;
 }
 
@@ -19,8 +17,8 @@
   margin: 0 auto;
   outline: 2px solid red;
   background-image: linear-gradient(to bottom,
-        #E5E5E5 302px,
-        #FFF5F6 302px);
+        #FFFFFF 302px,
+        var(--main-secondary-bgcolor) 302px);
 
  
 
@@ -35,7 +33,8 @@
 .contacts-cards-set {
   // width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  // flex-wrap: wrap;
   row-gap: 20px;
 }
 
@@ -54,67 +53,187 @@
   border-radius: 24px;
 
   outline: 1px solid blue;
-}
 
-// .contacts-card:not(:last-child) {
-//   margin-bottom: 20px;
-// }
+  &__title {
+      max-width: 80px;
+      height: 16px;
+      padding: 0;
+      margin-bottom: 20px;
+      text-align: center;
+  
+      line-height: 1.4;
+      letter-spacing: 0.04em;
+      color: #FFFFFF;
+      background: #F0D1A5;
+      border-radius: 4px;
+  
+      &--more-wide {
+        max-width: 130px;
+        background-color: #C2E297;
+      }
+    }
 
-.contacts-card__item:not(:last-child) {
-  margin-bottom: 24px;
-  border-bottom: 1px solid #E1E1E1;
-}
+  &__item:not(:last-child) {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #E1E1E1;
+  }
 
-// .wrapper {
-//   display: flex;
-// align-items: center;
-//   max-width: 80px;
-//   background: #F0D1A5;
-//     border-radius: 4px;
-//       margin-bottom: 20px;
-// }
+  &__city {
+    margin-bottom: 8px;
+    letter-spacing: 0.04em;
+  }
 
-.contacts-card__title {
-  max-width: 80px;
-  height: 16px;
-  padding: 0;
-  margin-bottom: 20px;
-  text-align: center;
+  &__description {
+    margin-bottom: 24px;
+    line-height: 1.5;
+    color: #907E82;
+  }
 
-  line-height: 1.4;
-  letter-spacing: 0.04em;
-  color: #FFFFFF;
-  background: #F0D1A5;
-  border-radius: 4px;
-}
+  &__hours {
+    margin-bottom: 8px;
+    color: #FFA5BA;
+  }
 
-.contacts-card__title--more-wide {
-  max-width: 130px;
-  background-color: #C2E297;
-}
-
-
-.contacts-card__city {
-  margin-bottom: 8px;
-  letter-spacing: 0.04em;
-}
-
-.contacts-card__description {
-  margin-bottom: 24px;
-  line-height: 1.5;
-  color: #907E82;
-}
-
-.contacts-card__hours {
-  margin-bottom: 8px;
-  color: #FFA5BA;
-}
-
-.contacts-card__hours:last-child {
-  margin-bottom: 24px;
+  &__hours:last-child {
+    margin-bottom: 24px;
+  }
 }
 
 .link--color {
   color: #907E82;
-  
 }
+
+
+
+
+
+// Buttons
+.contacts-buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding-top: 32px;
+  padding-bottom: 40px;
+  // justify-content: center;
+  align-items: center;
+}
+
+.contacts-buttons {  
+  display: inline-block;
+  border-radius: 22px;
+  border: none;
+  padding: 0 18px 0 17px;
+  max-width: 161px;
+  height: 44px;
+
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  color: #FFFFFF;
+  background-color: #D41342;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__icon {
+    stroke: #FFFFFF;
+    margin-left: 8px;
+  }
+
+  &--reverse-colors {
+    padding: 0 31px 0 32px;
+    color: #D41443;
+    background-color: #FFFFFF;
+  }
+
+  &__icon--left-margin {
+    margin-left: 13px;
+  }
+
+  &:hover {
+    cursor: pointer; 
+  }
+  
+  &--reverse-colors:hover {
+    background-color: #ECEBEB;
+  }
+}
+
+
+
+// .contacts-buttons__icon {
+//   stroke: #FFFFFF;
+//   margin-left: 8px;
+// }
+
+// .contacts-buttons--reverse-colors {
+//   padding: 0 31px 0 32px;
+//   color: #D41443;
+//   background-color: #FFFFFF;
+// }
+
+// .contacts-buttons__icon--left-margin {
+//   margin-left: 13px;
+// }
+
+// .contacts-buttons:hover {
+//   cursor: pointer;
+// }
+
+// .contacts-buttons--reverse-colors:hover {
+//   background-color: #ECEBEB;
+// }
+
+// OLD CODE --BEM
+// .contacts-card__title {
+//   max-width: 80px;
+//   height: 16px;
+//   padding: 0;
+//   margin-bottom: 20px;
+//   text-align: center;
+
+//   line-height: 1.4;
+//   letter-spacing: 0.04em;
+//   color: #FFFFFF;
+//   background: #F0D1A5;
+//   border-radius: 4px;
+
+//   &--more-wide {
+//       max-width: 130px;
+//       background-color: #C2E297;
+//     }
+// }
+
+// .contacts-card__title--more-wide {
+//   max-width: 130px;
+//   background-color: #C2E297;
+// }
+
+// .contacts-card__item:not(:last-child) {
+//   margin-bottom: 24px;
+//   border-bottom: 1px solid #E1E1E1;
+// }
+
+
+// .contacts-card__city {
+//   margin-bottom: 8px;
+//   letter-spacing: 0.04em;
+// }
+
+// .contacts-card__description {
+//   margin-bottom: 24px;
+//   line-height: 1.5;
+//   color: #907E82;
+// }
+
+// .contacts-card__hours {
+//   margin-bottom: 8px;
+//   color: #FFA5BA;
+// }
+
+// .contacts-card__hours:last-child {
+//   margin-bottom: 24px;
+// }
