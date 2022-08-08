@@ -2,6 +2,9 @@
 @import './base/base';
 @import './base/vars';
 @import './utils/reset';
-@import './components/index';
-
+@import './utils/visually-hidden';
+@import './layouts/header';
+@import './layouts/hero';
 @import './layouts/products';
+@import './layouts/advantages';
+@import './layouts/footer';
