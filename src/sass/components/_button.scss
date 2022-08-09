@@ -1,15 +1,17 @@
 .button {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: baseline;
+    width: 176px;
     height: 44px;
+    
 
-    padding: 13px 37px;
+    padding: 11px 37px;
 
     border-radius: 22px;
     cursor: pointer;
 
-    transition: background-color 250ms linear;
+    transition: background-color var(--main-transition);
 
     &__text {
         margin-right: 10px;
@@ -17,13 +19,20 @@
         line-height: calc(18 / 14);
         background-color: transparent;
 
-        transition: background-color 250ms linear;
+        transition: background-color var(--main-transition);
+
+        @media screen and (min-width: 768px) {
+            font-size: 16px;
+            line-height: calc(21 / 16);
+        }
     }
 
 
     &__icon {
         width: 5px;
         height: 8px;
+
+        transition: background-color var(--main-transition);
 
     }
 }
