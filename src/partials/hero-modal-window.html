@@ -1,0 +1,94 @@
+<!-- Hero modal window -->
+<div class="hero-backdrop is-hidden" data-modal-hero>
+  <div class="modal">
+    <button
+      class="modal__close-btn close-btn"
+      type="button"
+      data-modal-close-hero
+    >
+      <svg class="close-btn__icon" width="18px" height="18px">
+        <use href="./images/icons.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <form class="modal-form" autocomplete="off">
+      <p class="modal-form-subtitle">
+        Please leave your contact information. We will get back to you as soon
+        as possible
+      </p>
+
+      <label class="modal-form-label" for="user-name">Full name</label>
+      <div class="modal-form-field">
+        <input
+          class="modal-form-input"
+          type="text"
+          name="name"
+          id="user-name"
+          required
+        />
+        <svg class="modal-form-icon" width="18px" height="18px">
+          <use href="./images/icons.svg#icon-person"></use>
+        </svg>
+      </div>
+
+      <label class="modal-form-label" for="phone_number">Phone number</label>
+      <div class="modal-form-field">
+        <input
+          class="modal-form-input"
+          type="tel"
+          name="tel"
+          id="phone_number"
+          required
+        />
+        <svg class="modal-form-icon" width="20px" height="20px">
+          <use href="./images/icons.svg#icon-phone"></use>
+        </svg>
+      </div>
+
+      <label class="modal-form-label" for="user-email">Email adress</label>
+      <div class="modal-form-field">
+        <input
+          class="modal-form-input"
+          type="email"
+          name="email"
+          id="user-email"
+          required
+        />
+        <svg class="modal-form-icon" width="18px" height="18px">
+          <use href="./images/icons.svg#icon-email"></use>
+        </svg>
+      </div>
+
+      <label class="modal-form-label" for="user-coment">Coment</label>
+      <textarea
+        class="modal-form-textarea"
+        name="coment"
+        id="user-coment"
+        placeholder="Enter text"
+      ></textarea>
+
+      <label class="modal-form-checkbox">
+        <input
+          class="modal-agreement-input visually-hidden"
+          type="checkbox"
+          name="user-agreement"
+          required
+        />
+        <span class="modal-agreement-wrapper">
+          <svg class="modal-agreement-icon" width="16px" height="15px">
+            <use href="./images/icons.svg#icon-check"></use>
+          </svg>
+        </span>
+        <span class="modal-agreement-text"
+          >I agree with the distribution and accept
+          <span class="modal-agreement-contract"
+            >The terms of the contracts</span
+          >
+        </span>
+      </label>
+
+      <button class="button button--red modal-submit-btn" type="submit">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
