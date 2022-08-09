@@ -110,6 +110,14 @@
     font-size: 8px;
     line-height: 1.25;
 
+    transition-property: background-color box-shadow;
+    transition-duration: var(--transition-duration-main);
+    transition-timing-function: var(--timing-function-main);
+
+    &:focus {
+      outline: none;
+    }
+
     @media screen and (min-width: 1200px) {
       padding: 11px 25px;
       font-size: 14px;
@@ -126,7 +134,8 @@
     color: var(--accent-color);
     background-color: var(--fifth-bgcolor);
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: var(--button-hover-bgcolor);
     }
   }
@@ -169,22 +178,22 @@
       width: 18px;
       height: 18px;
       bottom: -7px;
-      background: url(/src/images/hero/arrow-right-18-1x.jpg);
+      background: url(/src/images/hero/arrow-right-tab@1x.jpg);
     }
 
     @media screen and (min-width: 768px) and (min-resolution: 2dppx) {
-      background: url(/src/images/hero/arrow-right-18-1x.jpg);
+      background: url(/src/images/hero/arrow-right-tab@2x.jpg);
     }
 
     @media screen and (min-width: 1200px) {
       height: 26px;
       width: 26px;
       bottom: -20px;
-      background: url(/src/images/hero/arrow-right-26-1x.jpg);
+      background: url(/src/images/hero/arrow-right-desk@1x.jpg);
     }
 
     @media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-      background: url(/src/images/hero/arrow-right-26-2x.jpg);
+      background: url(/src/images/hero/arrow-right-desk@2x.jpg);
     }
   }
 
