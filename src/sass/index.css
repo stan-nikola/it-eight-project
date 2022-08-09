@@ -650,6 +650,13 @@ address {
     padding: 37px 0;
   }
 }
+.header [class*=header] {
+  z-index: 1;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
 .header__nav {
   display: none;
   margin-left: 128px;
@@ -659,10 +666,22 @@ address {
     display: block;
   }
 }
+.header__nav-list {
+  display: flex;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+}
 .header__nav-link {
   display: block;
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
 }
-.header__nav-link__buy-now-btn {
+.header__nav-link--current, .header__nav-link:hover {
+  color: var(--accent-color);
+}
+.header__buy-now-btn {
   display: none;
   gap: 12px;
   align-items: center;
@@ -670,26 +689,33 @@ address {
   padding-left: 37px;
   padding-right: 37px;
   height: 44px;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  background-color: var(--fifth-bgcolor);
+  border-radius: 22px;
+  border: none;
 }
-.header__nav-link__buy-now-btn:hover {
+.header__buy-now-btn:hover {
   background-color: var(--button-hover-bgcolor);
 }
 @media screen and (min-width: 768px) {
-  .header__nav-link__buy-now-btn {
+  .header__buy-now-btn {
     display: flex;
     margin-left: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .header__nav-link__buy-now-btn {
+  .header__buy-now-btn {
     margin-left: auto;
   }
 }
-.header__nav-link__buy-now-btn-icon {
+.header__buy-now-btn-icon {
   position: relative;
   top: 2px;
 }
-.header__nav-link__nav-menu-btn {
+.header__nav-menu-btn {
   margin-left: auto;
   display: block;
   border: none;
@@ -699,7 +725,7 @@ address {
   box-shadow: 0px 6px var(--accent-color), 0px -6px var(--accent-color);
 }
 @media screen and (min-width: 1200px) {
-  .header__nav-link__nav-menu-btn {
+  .header__nav-menu-btn {
     display: none;
   }
 }
@@ -1084,6 +1110,10 @@ address {
 }
 
 .products__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-top: 160px;
   padding-bottom: 32px;
   width: 100%;
@@ -1157,23 +1187,13 @@ address {
   background-color: var(--primary-text-color);
   box-shadow: 10px 0 var(--primary-text-color), -10px 0 var(--primary-text-color);
 }
-@media screen and (min-width: 768px) {
-  .products__name::after {
-    left: 105px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .products__name::after {
-    left: 177px;
-  }
-}
 
 .products__name--icecream::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(-300px);
+  transform: translateX(-29%) translateY(-300px);
   width: 280px;
   height: 280px;
   background-repeat: no-repeat;
@@ -1203,7 +1223,7 @@ address {
   .products__name--icecream::before {
     top: 0;
     left: 0;
-    transform: translateY(-256px);
+    transform: translateX(-24%) translateY(-256px);
     width: 224px;
     height: 224px;
     background-image: url(../images/products/products-tab-1.png);
@@ -1218,7 +1238,7 @@ address {
   .products__name--icecream::before {
     top: 0;
     left: 0;
-    transform: translateY(-426px);
+    transform: translateX(-26%) translateY(-426px);
     width: 368px;
     height: 394px;
     background-image: url(../images/products/products-desc-1.png);
@@ -1235,7 +1255,7 @@ address {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(-300px);
+  transform: translateX(-28%) translateY(-300px);
   width: 280px;
   height: 280px;
   background-repeat: no-repeat;
@@ -1265,7 +1285,7 @@ address {
   .products__name--coffee::before {
     top: 0;
     left: 0;
-    transform: translateY(-256px);
+    transform: translateX(-23%) translateY(-256px);
     width: 224px;
     height: 224px;
     background-image: url(../images/products/products-tab-2.png);
@@ -1280,7 +1300,7 @@ address {
   .products__name--coffee::before {
     top: 0;
     left: 0;
-    transform: translateY(-426px);
+    transform: translateX(-25%) translateY(-426px);
     width: 368px;
     height: 394px;
     background-image: url(../images/products/products-desc-2.png);
@@ -1297,7 +1317,7 @@ address {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(-300px);
+  transform: translateX(-25%) translateY(-300px);
   width: 280px;
   height: 280px;
   background-repeat: no-repeat;
@@ -1327,7 +1347,7 @@ address {
   .products__name--milkshake::before {
     top: 0;
     left: 0;
-    transform: translateY(-256px);
+    transform: translateX(-19%) translateY(-256px);
     width: 224px;
     height: 224px;
     background-image: url(../images/products/products-tab-3.png);
@@ -1342,7 +1362,7 @@ address {
   .products__name--milkshake::before {
     top: 0;
     left: 0;
-    transform: translateY(-426px);
+    transform: translateX(-21%) translateY(-426px);
     width: 368px;
     height: 394px;
     background-image: url(../images/products/products-desc-3.png);
