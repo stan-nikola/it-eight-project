@@ -4,7 +4,7 @@
     align-items: baseline;
     width: 176px;
     height: 44px;
-    
+
 
     padding: 11px 37px;
 
@@ -59,6 +59,11 @@
 .button--white:hover .button__icon,
 .button--white:focus .button__icon {
     background-color: var(--button-hover-bgcolor);
+}
+
+.button--white:hover,
+.button--white:focus {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .button--red:hover,
