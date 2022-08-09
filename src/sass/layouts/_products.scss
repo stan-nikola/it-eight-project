@@ -120,7 +120,7 @@
     content: '';
     position: absolute;
     bottom: 0;
-    left: 133px;
+    left: 50%;
     transform: translateY(38px);
 
     width: 6px;
@@ -129,14 +129,6 @@
     display: block;
     background-color: var(--primary-text-color);
     box-shadow: 10px 0 var(--primary-text-color), -10px 0 var(--primary-text-color);
-
-    // @media screen and (min-width: 768px) {
-    //     left: 105px;
-    // }
-
-    // @media screen and (min-width: 1200px) {
-    //     left: 177px;
-    // }
 }
 
 .products__name--icecream::before {
