@@ -1445,6 +1445,7 @@ address {
 }
 .products__button:hover, .products__button:focus {
   background-color: var(--button-hover-bgcolor);
+  box-shadow: var(--primary-box-shadow);
 }
 
 .products__icon {
