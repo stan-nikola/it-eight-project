@@ -110,6 +110,14 @@
     font-size: 8px;
     line-height: 1.25;
 
+    transition-property: background-color box-shadow;
+    transition-duration: var(--transition-duration-main);
+    transition-timing-function: var(--timing-function-main);
+
+    &:focus {
+      outline: none;
+    }
+
     @media screen and (min-width: 1200px) {
       padding: 11px 25px;
       font-size: 14px;
@@ -126,7 +134,8 @@
     color: var(--accent-color);
     background-color: var(--fifth-bgcolor);
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: var(--button-hover-bgcolor);
     }
   }
