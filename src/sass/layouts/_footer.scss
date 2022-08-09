@@ -5,6 +5,18 @@
     background-color: var(--main-secondary-bgcolor); 
 
     &__box {
+        width: 100%;
+        padding: 40px 20px;
+
+        @media screen and (min-width: 768px) {
+        padding-left: 16px;
+        padding-right: 16px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 120px 16px 60px 16px;
+            }
+
         @media screen and (min-width: 768px) {
             display: flex;
             justify-content: space-between;
@@ -18,11 +30,12 @@
 
         @media screen and (min-width: 768px) {
             max-width: 340px;
+            margin-bottom: 0;
             }
 
         @media screen and (min-width: 1200px) {
             max-width: 500px;
-            margin-bottom: 60px;
+            margin-bottom: 0;
             }
     }
 
@@ -79,7 +92,6 @@
     
         display: block;
         margin-left: auto;
-        margin-bottom: 40px;
         text-align: right;
     
         color: var(--accent-color);
