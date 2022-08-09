@@ -114,8 +114,10 @@
     transition-duration: var(--transition-duration-main);
     transition-timing-function: var(--timing-function-main);
 
+    &:hover,
     &:focus {
       outline: none;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -170,31 +172,36 @@
   &__feature-link {
     position: absolute;
     left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transform: translateY(100%);
-
+    background-color: var(--fifth-bgcolor);
     border-radius: 50%;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: var(--button-hover-bgcolor);
+    }
 
     @media screen and (min-width: 768px) {
       width: 18px;
       height: 18px;
       bottom: -7px;
-      background: url(/src/images/hero/arrow-right-tab@1x.jpg);
-    }
-
-    @media screen and (min-width: 768px) and (min-resolution: 2dppx) {
-      background: url(/src/images/hero/arrow-right-tab@2x.jpg);
     }
 
     @media screen and (min-width: 1200px) {
       height: 26px;
       width: 26px;
       bottom: -20px;
-      background: url(/src/images/hero/arrow-right-desk@1x.jpg);
     }
+  }
 
-    @media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-      background: url(/src/images/hero/arrow-right-desk@2x.jpg);
-    }
+  &__feature-link-icon {
+    width: 35%;
+    height: 35%;
+    fill: var(--accent-color);
   }
 
   &__feature-img {

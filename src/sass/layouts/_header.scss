@@ -42,7 +42,9 @@
     line-height: 1.31;
 
     &--current,
-    &:hover {
+    &:hover,
+    &:focus {
+      outline: none;
       color: var(--accent-color);
     }
   }
@@ -73,6 +75,7 @@
     &:focus {
       outline: none;
       background-color: var(--button-hover-bgcolor);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
     @media screen and (min-width: 768px) {
