@@ -538,6 +538,15 @@ address {
   }
 }
 
+.products__name:hover,
+.products__name:focus {
+  cursor: pointer;
+  -webkit-animation: shakeX;
+          animation: shakeX;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
 .products__name::after {
   content: "";
   position: absolute;
@@ -780,6 +789,9 @@ address {
 }
 
 .products__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 120px;
   margin-right: 120px;
   width: 40px;
@@ -788,6 +800,7 @@ address {
   background-color: var(--primary-text-color);
   border-style: none;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .products__button {
@@ -800,6 +813,13 @@ address {
     margin-left: 164px;
     margin-right: 164px;
   }
+}
+.products__button:hover, .products__button:focus {
+  background-color: var(--main-secondary-bgcolor);
+}
+
+.products__icon {
+  fill: var(--accent-color);
 }
 
 /* Advantages */
