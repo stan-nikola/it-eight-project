@@ -1,4 +1,3 @@
-
 .header {
   background-color: var(--main-first-bgcolor);
   padding: 8px 0;
@@ -11,7 +10,14 @@
     padding: 37px 0;
   }
 
+  [class*='header'] {
+    z-index: 1;
+  }
 
+  &__container {
+    display: flex;
+    align-items: center;
+  }
 
   &__nav {
     display: none;
@@ -22,11 +28,24 @@
     }
   }
 
+  &__nav-list {
+    display: flex;
+    column-gap: 35px;
+  }
 
   &__nav-link {
     display: block;
 
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
 
+    &--current,
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
 
   &__buy-now-btn {
     display: none;
@@ -37,7 +56,14 @@
     padding-right: 37px;
     height: 44px;
 
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
 
+    background-color: var(--fifth-bgcolor);
+    border-radius: 22px;
+    border: none;
 
     &:hover {
       background-color: var(--button-hover-bgcolor);
@@ -61,17 +87,24 @@
   &__nav-menu-btn {
     margin-left: auto;
     display: block;
+    width: 20px;
+    height: 16px;
 
     border: none;
-    width: 20px;
-    border-width: 1px;
-    background-color: var(--accent-color);
-    box-shadow: 0px 6px var(--accent-color), 0px -6px var(--accent-color);
+    background: none;
+    padding: 0;
 
     @media screen and (min-width: 1200px) {
       display: none;
     }
   }
-}
 
+  &__nav-menu-btn-icon {
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-width: 1px;
+    background-color: var(--accent-color);
+    box-shadow: 0px 6px var(--accent-color), 0px -6px var(--accent-color);
+  }
 }
