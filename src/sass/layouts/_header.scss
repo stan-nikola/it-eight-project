@@ -1,65 +1,76 @@
-// .header {
-//   background-color: var(--main-first-bgcolor);
 
-//   [class*='header'] {
-//     z-index: 1;
-//   }
+.header {
+  background-color: var(--main-first-bgcolor);
+  padding: 8px 0;
 
-//   &__container {
-//     display: flex;
-//     align-items: center;
-//   }
+  @media screen and (min-width: 768px) {
+    padding: 32px 0 0 0;
+  }
 
-//   &__nav {
-//     margin-left: 128px;
-//   }
+  @media screen and (min-width: 1200px) {
+    padding: 37px 0;
+  }
 
-//   &__nav-list {
-//     display: flex;
-//     column-gap: 35px;
-//   }
 
-//   &__nav-link {
-//     display: block;
-//     padding: 52px 0 52px 0;
 
-//     color: var(--primary-text-color);
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 1.31;
+  &__nav {
+    display: none;
+    margin-left: 128px;
 
-//     &--current,
-//     &:hover {
-//       color: var(--accent-color);
-//     }
-//   }
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+  }
 
-//   &__buy-now-btn {
-//     z-index: inherit;
-//     display: flex;
-//     gap: 12px;
-//     align-items: center;
-//     margin-left: auto;
-//     padding-left: 37px;
-//     padding-right: 37px;
-//     height: 44px;
 
-//     color: var(--accent-color);
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 1.31;
+  &__nav-link {
+    display: block;
 
-//     background-color: var(--fifth-bgcolor);
-//     border-radius: 22px;
-//     border: none;
 
-//     &:hover {
-//       background-color: var(--button-hover-bgcolor);
-//     }
-//   }
 
-//   &__buy-now-btn-icon {
-//     position: relative;
-//     top: 2px;
-//   }
-// }
+  &__buy-now-btn {
+    display: none;
+    gap: 12px;
+    align-items: center;
+    margin-left: auto;
+    padding-left: 37px;
+    padding-right: 37px;
+    height: 44px;
+
+
+
+    &:hover {
+      background-color: var(--button-hover-bgcolor);
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-left: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: auto;
+    }
+  }
+
+  &__buy-now-btn-icon {
+    position: relative;
+    top: 2px;
+  }
+
+  &__nav-menu-btn {
+    margin-left: auto;
+    display: block;
+
+    border: none;
+    width: 20px;
+    border-width: 1px;
+    background-color: var(--accent-color);
+    box-shadow: 0px 6px var(--accent-color), 0px -6px var(--accent-color);
+
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
+}
+

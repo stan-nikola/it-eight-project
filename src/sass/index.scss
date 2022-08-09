@@ -1,3 +1,4 @@
+
 @import './utils/common';
 @import './components/button';
 @import './components/container';
@@ -7,6 +8,9 @@
 @import './utils/reset';
 @import './utils/visually-hidden';
 @import './components/index';
+@import './components/container';
+
+@import './components/side-nav';
 @import './layouts/header';
 @import './layouts/hero';
 @import './layouts/products';
