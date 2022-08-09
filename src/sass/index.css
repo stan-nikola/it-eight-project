@@ -214,7 +214,7 @@
 }
 
 body {
-  font-family: "DM Sans" sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 14px;
   color: var(--primary-text-color);
@@ -1452,6 +1452,22 @@ address {
   fill: var(--accent-color);
 }
 
+@media screen and (max-width: 767px) {
+  .gallery {
+    background: linear-gradient(to bottom, #FFF5F6 87px, white 87px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    background: linear-gradient(to bottom, #FFF5F6 246px, white 246px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    background: linear-gradient(to bottom, #FFF5F6 150px, white 150px);
+  }
+}
+
 .image-list {
   display: flex;
   list-style: none;
@@ -1459,31 +1475,6 @@ address {
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-}
-@media screen and (min-width: 768px) {
-  .image-list {
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .wrapper-container {
-    background: linear-gradient(to bottom, #FFF5F6 27px, white 27px);
-  }
-}
-@media screen and (min-width: 768px) {
-  .wrapper-container {
-    background: linear-gradient(to bottom, #FFF5F6 187px, white 187px);
-    height: 327px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .wrapper-container {
-    padding-bottom: 120px;
-    height: 550px;
-    width: 100%;
-    background: linear-gradient(to bottom, #FFF5F6 89px, white 89px);
-  }
 }
 
 .image-list__item img {
@@ -2336,16 +2327,20 @@ address {
 }
 .footer__box {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 40px 20px;
 }
 @media screen and (min-width: 768px) {
   .footer__box {
+    max-width: 768px;
     padding-left: 16px;
     padding-right: 16px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__box {
+    max-width: 1200px;
     padding: 120px 16px 60px 16px;
   }
 }
@@ -2445,7 +2440,12 @@ address {
 }
 @media screen and (min-width: 768px) {
   .footer__contact-box {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__contact-box {
+    margin-bottom: 0px;
   }
 }
 .footer__privacy-box {
