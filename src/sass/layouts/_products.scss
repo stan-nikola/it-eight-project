@@ -155,7 +155,7 @@
             }
     }
 
-    @media screen and (min-width: 320px) and (max-width: 767px) {
+    @media screen and (min-width: 320px) and (max-width: 767.9px) {
         background-image: url(../images/products/products-mob-1.png);
 
         @media (min-device-pixel-ratio: 2),
@@ -227,7 +227,7 @@
         }
     }
 
-    @media screen and (min-width: 320px) and (max-width: 767px) {
+    @media screen and (min-width: 320px) and (max-width: 767.9px) {
         background-image: url(../images/products/products-mob-2.png);
 
         @media (min-device-pixel-ratio: 2),
@@ -299,7 +299,7 @@
         }
     }
 
-    @media screen and (min-width: 320px) and (max-width: 767px) {
+    @media screen and (min-width: 320px) and (max-width: 767.9px) {
         background-image: url(../images/products/products-mob-3.png);
 
         @media (min-device-pixel-ratio: 2),
@@ -405,10 +405,10 @@
         margin-right: 164px;
     }
 
-    // Лучше такой цвет на ховере и фокусе
     &:hover,
     &:focus {
-        background-color: var(--main-secondary-bgcolor);
+        background-color: var(--button-hover-bgcolor);
+        box-shadow: var(--primary-box-shadow);
     }
 }
 
