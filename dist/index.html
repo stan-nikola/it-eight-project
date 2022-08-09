@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ice cream">
+    <title>Ice Cream</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ice cream">
-  <title>Ice Cream</title>
+    <!-- Fonts Start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
+    <!-- Fonts End-->
 
-  <!-- Fonts Start-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
-  <!-- Fonts End-->
+    <!--  Favicon Start-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.bb4effea.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.aa095f13.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.128c8a98.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.aa06d099.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--  Favicon end-->
 
-  <!--  Favicon Start-->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.bb4effea.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.aa095f13.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.128c8a98.png">
-  <link rel="manifest" href="/favicon/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.aa06d099.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <!--  Favicon end-->
+    <!-- Animate start -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animate and -->
 
-  <link rel="stylesheet" href="/index.b07a87f3.css">
+    <link rel="stylesheet" href="/index.b07a87f3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="/index.975ef6c8.js" defer=""></script>
+  </head>
 
-  <script src="/index.975ef6c8.js" defer=""></script>
-</head>
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
 
-<body>
-  <!-- ❗️❗️❗️ Add partials like so for every page -->
-
-
-
-  <header class="header">
+    <header class="header">
   <div class="header__container container">
     <a class="header__logo-link" href="#">
       <svg class="header__logo-link-icon" width="199" height="50">
@@ -50,16 +50,16 @@
           </a>
         </li>
         <li class="header__nav-list-item">
-          <a class="header__nav-link link" href="#">About us</a>
+          <a class="header__nav-link link" href="#section-hero">About us</a>
         </li>
         <li class="header__nav-list-item">
-          <a class="header__nav-link link" href="#">How it&apos;s made?</a>
+          <a class="header__nav-link link" href="#section-about">How it&apos;s made?</a>
         </li>
         <li class="header__nav-list-item">
-          <a class="header__nav-link link" href="#">Our products</a>
+          <a class="header__nav-link link" href="#section-products">Our products</a>
         </li>
         <li class="header__nav-list-item">
-          <a class="header__nav-link link" href="#">Contact</a>
+          <a class="header__nav-link link" href="#section-contacts">Contact</a>
         </li>
       </ul>
     </nav>
@@ -75,7 +75,7 @@
   </div>
 </header>
 
-  <section class="hero">
+    <section class="hero" id="section-hero">
   <div class="hero__container container">
     <div class="hero__content-left">
       <h1 class="hero__header">
@@ -96,9 +96,9 @@
       </ul>
       <div class="hero__feature">
         <picture class="hero__feature-img">
-          <source media="(max-width: 1199.9px)" srcset="/milk-152-1x.c3d9ec90.png 1x, /milk-152-2x.7f5869f4.png 2x" type="image/png">
-          <source class="hero__feature-img" media="(min-width: 1200px)" srcset="/milk-213-1x.5ff14458.png 1x, /milk-213-2x.246a2c30.png 2x" type="image/png">
-          <img src="/milk-152-1x.c3d9ec90.png" alt="Milk">
+          <source media="(max-width: 1199.9px)" srcset="/milk-tab@1x.3fccd12e.png 1x, /milk-tab@2x.c7eb9e77.png 2x" type="image/png">
+          <source class="hero__feature-img" media="(min-width: 1200px)" srcset="/milk-desk@1x.38592964.png 1x, /milk-desk@2x.73c941a4.png 2x" type="image/png">
+          <img src="/milk-tab@1x.3fccd12e.png" alt="Milk">
         </picture>
         <span class="hero__feature-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -109,10 +109,10 @@
     </div>
 
     <picture class="hero__main-img">
-      <source media="(max-width: 767.9px)" srcset="/icecream-171-1x.508ec938.png 1x, /icecream-171-2x.a002cff5.png 2x" type="image/png">
-      <source media="(max-width: 1199.9px)" srcset="/icecream-143-1x.c9d6c609.png 1x, /icecream-143-2x.e144c886.png 2x" type="image/png">
-      <source media="(min-width: 1200px)" srcset="/icecream-236-1x.505dd930.png 1x, /icecream-236-2x.7a9b99cb.png 2x" type="image/png">
-      <img src="/icecream-236-1x.505dd930.png" alt="Icecream">
+      <source media="(max-width: 767.9px)" srcset="/icecream-mob@1x.fdf25c0c.png 1x, /icecream-mob@2x.49b38ed2.png 2x" type="image/png">
+      <source media="(max-width: 1199.9px)" srcset="/icecream-tab@1x.f77fe114.png 1x, /icecream-tab@2x.ffb80ae8.png 2x" type="image/png">
+      <source media="(min-width: 1200px)" srcset="/icecream-desk@1x.79053eee.png 1x, /icecream-desk@2x.ec0cb6a8.png 2x" type="image/png">
+      <img src="/icecream-desk@1x.79053eee.png" alt="Icecream">
     </picture>
     <div class="hero__content-right">
       <ul class="hero__statistic-list list">
@@ -126,16 +126,15 @@
         </li>
       </ul>
       <picture class="hero__secondary-img">
-        <source media="(max-width: 1199.9px)" srcset="/girl-with-icecream-190-1x.d2efc44a.png 1x, /girl-with-icecream-190-2x.9833bcef.png 2x" type="image/png">
-        <source media="(min-width: 1200px)" srcset="/girl-with-icecream-304-1x.dc9f614c.png 1x, /girl-with-icecream-304-2x.06738cd2.png 2x" type="image/png">
-        <img src="/girl-with-icecream-190-1x.d2efc44a.png" alt="Icecream">
+        <source media="(max-width: 1199.9px)" srcset="/girl-with-icecream-tab@1x.a445bbc1.png 1x, /girl-with-icecream-tab@2x.af6b34d2.png 2x" type="image/png">
+        <source media="(min-width: 1200px)" srcset="/girl-with-icecream-desk@1x.cebc3638.png 1x, /girl-with-icecream-desk@2x.065658a1.png 2x" type="image/png">
+        <img src="/girl-with-icecream-desk@1x.cebc3638.png" alt="Icecream">
       </picture>
     </div>
   </div>
 </section>
 
-
-  <section class="products section">
+    <section class="products section" id="section-products">
   <div class="products__container container">
     <p class="products__label">100% natural</p>
     <h2 class="products__title title">products</h2>
@@ -143,8 +142,8 @@
       <li class="products__item products__item--bg1">
         <h3 class="products__name products__name--icecream">ice cream</h3>
         <p class="products__desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-          do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
         </p>
         <button class="products__button" type="button">
           <svg class="products__icon" width="14" height="14">
@@ -155,8 +154,8 @@
       <li class="products__item products__item--bg2">
         <h3 class="products__name products__name--coffee">ice coffee</h3>
         <p class="products__desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
         </p>
         <button class="products__button" type="button">
           <svg class="products__icon" width="14" height="14">
@@ -167,8 +166,8 @@
       <li class="products__item products__item--bg3">
         <h3 class="products__name products__name--milkshake">milkshakes</h3>
         <p class="products__desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
         </p>
         <button class="products__button" type="button">
           <svg class="products__icon" width="14" height="14">
@@ -180,19 +179,19 @@
   </div>
 </section>
 
-  <section class="section about">
+    <section class="section about" id="section-about">
   <div class="container">
     <p class="subtitle">tradition and love</p>
     <h1 class="title about__title">how it’s made?</h1>
     <div class="about__wrapper">
-      <picture class="about__picture">
-        <source media="(min-width: 1200px)" srcset="/about-l.20396a0b.webp    1x, /about-l@2x.0d518cc7.webp 2x" type="image/webp">
-        <source media="(min-width: 1200px)" srcset="/about-l.2c7be8e6.png    1x, /about-l@2x.619dfb91.png 2x" type="image/png">
-        <source media="(min-width: 768px)" srcset="/about-m.57274556.webp    1x, /about-m@2x.1d89b48a.webp 2x" type="image/webp">
-        <source media="(min-width: 768px)" srcset="/about-m.22cd084e.png    1x, /about-m@2x.a087d383.png 2x" type="image/png">
-        <source media="(max-width: 768px)" srcset="/about-s.95fe40e5.webp    1x, /about-s@2x.e644acd1.webp 2x" type="image/webp">
-        <source media="(max-width: 768px)" srcset="/about-s.6168bba9.png    1x, /about-s@2x.5e478914.png 2x" type="image/png">
-        <img src="/about-s.6168bba9.png" alt="cow">
+      <picture class="about__picture" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="300">
+        <source media="(min-width: 1200px)" srcset="/about-desktop.13977433.webp    1x, /about-desktop@2x.7c72d008.webp 2x" type="image/webp">
+        <source media="(min-width: 1200px)" srcset="/about-desktop.a3c372cc.png    1x, /about-desktop@2x.07d55d90.png 2x" type="image/png">
+        <source media="(min-width: 768px)" srcset="/about-tablet.3da7f59c.webp    1x, /about-tablet@2x.22a31279.webp 2x" type="image/webp">
+        <source media="(min-width: 768px)" srcset="/about-tablet.0ca30c92.png    1x, /about-tablet@2x.123e5e7f.png 2x" type="image/png">
+        <source media="(max-width: 768px)" srcset="/about-mobile.03350285.webp    1x, /about-mobile@2x.e9fee821.webp 2x" type="image/webp">
+        <source media="(max-width: 768px)" srcset="/about-mobile.02a7eb64.png    1x, /about-mobile@2x.b29e9309.png 2x" type="image/png">
+        <img src="/about-mobile.02a7eb64.png" alt="cow">
       </picture>
       <div class="about__content">
         <p class="about__text about__text--black">
@@ -213,7 +212,7 @@
   </div>
 </section>
 
-  <section class="advantages">
+    <section class="advantages">
   <div class="container">
     <h2 class="visually-hidden">Advantages</h2>
     <ul class="advantages__list list">
@@ -245,7 +244,7 @@
   </div>
 </section>
 
-  <section class="gallery section">
+    <section class="gallery section">
   <div class="wrapper-container container">
     <ul class="image-list">
       <li class="image-list__item image-list__item--1">
@@ -326,153 +325,143 @@
   </div>
 </section>
 
-  
-  <!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title lang="en">html homework-02</title>
-  </head> -->
-
-  <section class="sect">
-    <div class="container cont">
-      <div>
-        <h1 class="visually-hidden">Our contacts</h1>
-        <ul class="contacts-cards-set list">
-          <li class="contacts-card">
-            <p class="contacts-card__title">CAFE</p>
-            <ul class="list">
-              <li class="contacts-card__item">
-                <p class="contacts-card__city">Chicago</p>
-                <p class="contacts-card__description">
-                  Fusce ut velit laoreet, tempus <br>
-                  arcu molestie vulputate
-                </p>
-              </li>
-              <li class="contacts-card__item">
-                <p class="contacts-card__days">Monday - Friday</p>
-                <p class="contacts-card__hours">06:00 AM - 10:00 PM</p>
-                <p class="contacts-card__days">Saturday - Sunday</p>
-                <p class="contacts-card__hours">08:00 AM - 16:00 PM</p>
-              </li>
-              <li class="contacts-card__item">
-                <a class="contacts-card__tel-email link" href="tel:+610383766284">+61(0) 383 766 284</a>
-                <a class="contacts-card__tel-email link" href="mailto:noreply@envato.com">noreply@envato.com</a>
-              </li>
-            </ul>
-          </li>
-          <li class="contacts-card">
-            <p class="contacts-card__title contacts-card__title--more-wide">
-              FOODTRUCK
-            </p>
-            <ul class="list">
-              <li class="contacts-card__item">
-                <p class="contacts-card__city">Los Angeles</p>
-                <p class="contacts-card__description">
-                  Fusce ut velit laoreet, tempus <br>
-                  arcu molestie vulputate
-                </p>
-              </li>
-              <li class="contacts-card__item">
-                <p class="contacts-card__days">Monday - Friday</p>
-                <p class="contacts-card__hours">06:00 AM - 10:00 PM</p>
-                <p class="contacts-card__days">Saturday - Sunday</p>
-                <p class="contacts-card__hours">08:00 AM - 16:00 PM</p>
-              </li>
-              <li class="contacts-card__item">
-                <a class="contacts-card__tel-email link" href="tel:+610383766284">+61(0) 383 766 284</a>
-                <a class="contacts-card__tel-email link" href="mailto:noreply@envato.com">noreply@envato.com</a>
-              </li>
-            </ul>
-          </li>
-          <li class="contacts-card">
-            <p class="contacts-card__title">CAFE</p>
-            <ul class="list">
-              <li class="contacts-card__item">
-                <p class="contacts-card__city">New York</p>
-                <p class="contacts-card__description">
-                  Fusce ut velit laoreet, tempus <br>
-                  arcu molestie vulputate
-                </p>
-              </li>
-              <li class="contacts-card__item">
-                <p class="contacts-card__days">Monday - Friday</p>
-                <p class="contacts-card__hours">06:00 AM - 10:00 PM</p>
-                <p class="contacts-card__days">Saturday - Sunday</p>
-                <p class="contacts-card__hours">08:00 AM - 16:00 PM</p>
-              </li>
-              <li class="contacts-card__item">
-                <a class="contacts-card__tel-email link" href="tel:+610383766284">+61(0) 383 766 284</a>
-                <a class="contacts-card__tel-email link" href="mailto:noreply@envato.com">noreply@envato.com</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <!-- Buttons -->
-        <div class="contacts-buttons-wrapper">
-          <button class="contacts-buttons" type="button" data-modal-open="">
-            Our Locations
-            <svg class="contacts-buttons__icon" width="4" height="8">
-              <use href="/icons.adfc4680.svg#icon-arrow-second"></use>
-            </svg>
-          </button>
-
-          <button class="contacts-buttons contacts-buttons--reverse-colors" type="button" data-modal-open-fr="">
-            Franchise
-            <svg class="contacts-buttons__icon contacts-buttons__icon--left-margin" width="4" height="8">
-              <use href="/icons.adfc4680.svg#icon-arrow-fourth"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <!-- Location modal window -->
-      <div class="contacts-backdrop is-hidden" data-modal="">
-        <div class="contacts-modal">
-          <button type="button" class="close-modal-btn" data-modal-close="">
-            <svg class="close-modal-btn__icon" width="18" height="18">
-              <use href="/icons.adfc4680.svg#icon-modal-close"></use>
-            </svg>
-          </button>
-          <p class="contacts-modal-slogan">
-            Our main office location: <br>
-            3924 West Fullerton Avenue Chicago, IL 60647
+    
+    <section class="sect" id="section-contacts">
+  <div class="container cont">
+    <div>
+      <h1 class="visually-hidden">Our contacts</h1>
+      <ul class="contacts-cards-set list">
+        <li class="contacts-card">
+          <p class="contacts-card__title">CAFE</p>
+          <ul class="list">
+            <li class="contacts-card__item">
+              <p class="contacts-card__city">Chicago</p>
+              <p class="contacts-card__description">
+                Fusce ut velit laoreet, tempus <br>
+                arcu molestie vulputate
+              </p>
+            </li>
+            <li class="contacts-card__item">
+              <p class="contacts-card__days">Monday - Friday</p>
+              <p class="contacts-card__hours">06:00 AM - 10:00 PM</p>
+              <p class="contacts-card__days">Saturday - Sunday</p>
+              <p class="contacts-card__hours">08:00 AM - 16:00 PM</p>
+            </li>
+            <li class="contacts-card__item">
+              <a class="contacts-card__tel-email link" href="tel:+610383766284">+61(0) 383 766 284</a>
+              <a class="contacts-card__tel-email link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            </li>
+          </ul>
+        </li>
+        <li class="contacts-card">
+          <p class="contacts-card__title contacts-card__title--more-wide">
+            FOODTRUCK
           </p>
-          <p>
-            <iframe class="contacts-modal-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d742.1299526754829!2d-87.72537315246332!3d41.92468038236582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1660037319489!5m2!1sen!2sua" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </p>
-        </div>
-      </div>
+          <ul class="list">
+            <li class="contacts-card__item">
+              <p class="contacts-card__city">Los Angeles</p>
+              <p class="contacts-card__description">
+                Fusce ut velit laoreet, tempus <br>
+                arcu molestie vulputate
+              </p>
+            </li>
+            <li class="contacts-card__item">
+              <p class="contacts-card__days">Monday - Friday</p>
+              <p class="contacts-card__hours">06:00 AM - 10:00 PM</p>
+              <p class="contacts-card__days">Saturday - Sunday</p>
+              <p class="contacts-card__hours">08:00 AM - 16:00 PM</p>
+            </li>
+            <li class="contacts-card__item">
+              <a class="contacts-card__tel-email link" href="tel:+610383766284">+61(0) 383 766 284</a>
+              <a class="contacts-card__tel-email link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            </li>
+          </ul>
+        </li>
+        <li class="contacts-card">
+          <p class="contacts-card__title">CAFE</p>
+          <ul class="list">
+            <li class="contacts-card__item">
+              <p class="contacts-card__city">New York</p>
+              <p class="contacts-card__description">
+                Fusce ut velit laoreet, tempus <br>
+                arcu molestie vulputate
+              </p>
+            </li>
+            <li class="contacts-card__item">
+              <p class="contacts-card__days">Monday - Friday</p>
+              <p class="contacts-card__hours">06:00 AM - 10:00 PM</p>
+              <p class="contacts-card__days">Saturday - Sunday</p>
+              <p class="contacts-card__hours">08:00 AM - 16:00 PM</p>
+            </li>
+            <li class="contacts-card__item">
+              <a class="contacts-card__tel-email link" href="tel:+610383766284">+61(0) 383 766 284</a>
+              <a class="contacts-card__tel-email link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Buttons -->
+      <div class="contacts-buttons-wrapper">
+        <button class="contacts-buttons" type="button" data-modal-open="">
+          Our Locations
+          <svg class="contacts-buttons__icon" width="4" height="8">
+            <use href="/icons.adfc4680.svg#icon-arrow-second"></use>
+          </svg>
+        </button>
 
-      <!-- Franchise modal window -->
-      <div class="contacts-backdrop is-hidden" data-modal-fr="">
-        <div class="contacts-modal">
-          <button type="button" class="close-modal-btn" data-modal-close-fr="">
-            <svg class="close-modal-btn__icon" width="18" height="18">
-              <use href="/icons.adfc4680.svg#icon-modal-close"></use>
-            </svg>
-          </button>
-          <p class="contacts-modal-slogan">Proposal for cooperation</p>
-          <p class="contacts-modal-proposal">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            ut, maiores earum voluptatibus quae eos a distinctio fugiat
-            expedita! Voluptates quae itaque hic, ea vel nihil. Aliquam corrupti
-            libero soluta? Maiores dicta modi adipisci illum, ab neque eos,
-            voluptatem iusto fugiat explicabo illo omnis delectus nisi voluptate
-            nemo voluptas totam esse facilis! Facere nisi eligendi earum,
-            tempora asperiores atque omnis?
-          </p>
-        </div>
+        <button class="contacts-buttons contacts-buttons--reverse-colors" type="button" data-modal-open-fr="">
+          Franchise
+          <svg class="contacts-buttons__icon contacts-buttons__icon--left-margin" width="4" height="8">
+            <use href="/icons.adfc4680.svg#icon-arrow-fourth"></use>
+          </svg>
+        </button>
       </div>
     </div>
-    <script src="/index.eda180a1.js"></script>
-    <script src="/index.b2503f32.js"></script>
-  </section>
 
+    <!-- Location modal window -->
+    <div class="contacts-backdrop is-hidden" data-modal="">
+      <div class="contacts-modal">
+        <button type="button" class="close-modal-btn" data-modal-close="">
+          <svg class="close-modal-btn__icon" width="18" height="18">
+            <use href="/icons.adfc4680.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+        <p class="contacts-modal-slogan">
+          Our main office location: <br>
+          3924 West Fullerton Avenue Chicago, IL 60647
+        </p>
+        <p>
+          <iframe class="contacts-modal-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d742.1299526754829!2d-87.72537315246332!3d41.92468038236582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1660037319489!5m2!1sen!2sua" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </p>
+      </div>
+    </div>
 
-  <footer class="footer">
+    <!-- Franchise modal window -->
+    <div class="contacts-backdrop is-hidden" data-modal-fr="">
+      <div class="contacts-modal">
+        <button type="button" class="close-modal-btn" data-modal-close-fr="">
+          <svg class="close-modal-btn__icon" width="18" height="18">
+            <use href="/icons.adfc4680.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+        <p class="contacts-modal-slogan">Proposal for cooperation</p>
+        <p class="contacts-modal-proposal">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut,
+          maiores earum voluptatibus quae eos a distinctio fugiat expedita!
+          Voluptates quae itaque hic, ea vel nihil. Aliquam corrupti libero
+          soluta? Maiores dicta modi adipisci illum, ab neque eos, voluptatem
+          iusto fugiat explicabo illo omnis delectus nisi voluptate nemo
+          voluptas totam esse facilis! Facere nisi eligendi earum, tempora
+          asperiores atque omnis?
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="/index.eda180a1.js"></script>
+  <script src="/index.b2503f32.js"></script>
+</section>
+
+    <footer class="footer">
     <div class="footer__box">
         <div class="footer__title-box">
         <p class="footer__paragraph">homemade ice cream made</p>
@@ -501,7 +490,7 @@
         <p>All Rights Reserved.</p>
     </div>
 </footer>
-  <div class="side-nav is-hidden" data-mobile-nav="">
+    <div class="side-nav is-hidden" data-mobile-nav="">
   <button class="side-nav__close-btn" data-mobile-nav-close="">
     <svg class="side-nav__close-btn-icon" width="16" height="16">
       <use href="/icons.adfc4680.svg#icon-close"></use>
@@ -515,25 +504,29 @@
   </button>
   <ul class="side-nav__links list">
     <li class="side-nav__links-item">
-      <a class="side-nav__link side-nav__link--current link" href="#">Home</a>
+      <a class="side-nav__link side-nav__link--current link" href="#section-hero">Home</a>
     </li>
     <li class="side-nav__links-item">
-      <a class="side-nav__link link" href="#">About us</a>
+      <a class="side-nav__link link" href="#section-about">About us</a>
     </li>
     <li class="side-nav__links-item">
-      <a class="side-nav__link link" href="#">How it&apos;s made?</a>
+      <a class="side-nav__link link" href="#section-about">How it&apos;s made?</a>
     </li>
     <li class="side-nav__links-item">
-      <a class="side-nav__link link" href="#">Our products</a>
+      <a class="side-nav__link link" href="#section-products">Our products</a>
     </li>
     <li class="side-nav__links-item">
-      <a class="side-nav__link link" href="#">Contact</a>
+      <a class="side-nav__link link" href="#section-contacts">Contact</a>
     </li>
   </ul>
 </div>
 
 
-  <script src="/index.707f265c.js"></script>
-</body>
+    <script src="/index.707f265c.js"></script>
+    <script src="/index.2045d4c7.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();
 
+</script>
+  </body>
 </html>

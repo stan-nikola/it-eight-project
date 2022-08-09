@@ -43,8 +43,11 @@
     <meta name="theme-color" content="#ffffff" />
     <!--  Favicon end-->
 
-    <link rel="stylesheet" href="./sass/index.scss" />
+    <!-- Animate start -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Animate and -->
 
+    <link rel="stylesheet" href="./sass/index.scss" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -58,7 +61,6 @@
 
     <include src="./partials/header.html"></include>
     <include src="./partials/hero.html"></include>
-
     <include src="./partials/products.html"></include>
     <include src="./partials/about.html"></include>
     <include src="./partials/advantages.html"></include>
@@ -70,5 +72,9 @@
 
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/anchors.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
