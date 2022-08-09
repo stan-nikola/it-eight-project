@@ -1,65 +1,65 @@
-.header {
-  background-color: var(--main-first-bgcolor);
+// .header {
+//   background-color: var(--main-first-bgcolor);
 
-  [class*='header'] {
-    z-index: 1;
-  }
+//   [class*='header'] {
+//     z-index: 1;
+//   }
 
-  &__container {
-    display: flex;
-    align-items: center;
-  }
+//   &__container {
+//     display: flex;
+//     align-items: center;
+//   }
 
-  &__nav {
-    margin-left: 128px;
-  }
+//   &__nav {
+//     margin-left: 128px;
+//   }
 
-  &__nav-list {
-    display: flex;
-    column-gap: 35px;
-  }
+//   &__nav-list {
+//     display: flex;
+//     column-gap: 35px;
+//   }
 
-  &__nav-link {
-    display: block;
-    padding: 52px 0 52px 0;
+//   &__nav-link {
+//     display: block;
+//     padding: 52px 0 52px 0;
 
-    color: var(--primary-text-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
+//     color: var(--primary-text-color);
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.31;
 
-    &--current,
-    &:hover {
-      color: var(--accent-color);
-    }
-  }
+//     &--current,
+//     &:hover {
+//       color: var(--accent-color);
+//     }
+//   }
 
-  &__buy-now-btn {
-    z-index: inherit;
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    margin-left: auto;
-    padding-left: 37px;
-    padding-right: 37px;
-    height: 44px;
+//   &__buy-now-btn {
+//     z-index: inherit;
+//     display: flex;
+//     gap: 12px;
+//     align-items: center;
+//     margin-left: auto;
+//     padding-left: 37px;
+//     padding-right: 37px;
+//     height: 44px;
 
-    color: var(--accent-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
+//     color: var(--accent-color);
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.31;
 
-    background-color: var(--fifth-bgcolor);
-    border-radius: 22px;
-    border: none;
+//     background-color: var(--fifth-bgcolor);
+//     border-radius: 22px;
+//     border: none;
 
-    &:hover {
-      background-color: var(--button-hover-bgcolor);
-    }
-  }
+//     &:hover {
+//       background-color: var(--button-hover-bgcolor);
+//     }
+//   }
 
-  &__buy-now-btn-icon {
-    position: relative;
-    top: 2px;
-  }
-}
+//   &__buy-now-btn-icon {
+//     position: relative;
+//     top: 2px;
+//   }
+// }
