@@ -1,3 +1,37 @@
+
+
+.gallery {
+
+    @media screen and (max-width:767px) {
+        background: linear-gradient(to bottom,
+                    #FFF5F6 87px,
+        
+        
+                    white 87px);
+    }
+
+    @media screen and (min-width:768px) {
+        
+        
+                    background: linear-gradient(to bottom,
+                                              #FFF5F6 246px,
+        
+        
+                                                white 246px);
+    }
+
+        @media screen and (min-width:1200px) {
+    
+    
+            background: linear-gradient(to bottom,
+                    #FFF5F6 150px,
+    
+    
+                    white 150px);
+                    
+        }
+}
+
 .image-list {
     
         
@@ -7,52 +41,14 @@
                 margin-left: auto;
                 margin-right: auto;
               justify-content: center;
+              
 
-              @media screen and (min-width:768px) {
-               justify-content: center;
-            
-            
-              }
-                
+              
    
 }
 
-.wrapper-container {
 
-  @media screen and (max-width:767px) {
-    background: linear-gradient(to bottom,
-                #FFF5F6 27px,
-    
-    
-                white 27px);
-                
-  }
 
-    @media screen and (min-width:768px) {
-            background: linear-gradient(to bottom,
-                    #FFF5F6 187px,
-    
-    
-                    white 187px);
-                    
-                    height: 327px;
-                    
-    
-        }
-
-                @media screen and (min-width:1200px) {
-                    padding-bottom: 120px;
-                    height: 550px;
-                    width: 100%;
-        
-        background: linear-gradient(to bottom,
-                    #FFF5F6 89px,
-        
-        
-                    white 89px);
-                }
-        
-}
 
 .image-list__item img {
   display: block;
