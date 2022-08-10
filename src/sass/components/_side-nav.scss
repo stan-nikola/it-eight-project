@@ -71,7 +71,6 @@
 
   &__buy-now-btn-icon {
     position: relative;
-    top: 2px;
   }
 
   &__links {
@@ -83,6 +82,10 @@
     display: block;
     padding: 12px var(--indent) 12px var(--indent);
     border-bottom: 1px solid var(--mobile-menu-line-color);
+
+    transition-property: color;
+    transition-duration: var(--transition-duration-main);
+    transition-timing-function: var(--timing-function-main);
 
     &--current,
     &:hover,
