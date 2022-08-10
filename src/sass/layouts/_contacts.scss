@@ -1,23 +1,22 @@
 .contacts-section {
   padding-top: 60px;
   padding-bottom: 40px;
-  // background-color: #FFF5F6;
   // outline: 2px solid green;
   background-image: linear-gradient(to bottom,
-        #FFFFFF 362px,
+       var(--fifth-bgcolor) 362px,
         var(--main-secondary-bgcolor) 362px);
 
   @media screen and (min-width: 768px) {
     padding-top: 80px;
     background-image: linear-gradient(to bottom,
-        #FFFFFF 378px,
+        var(--fifth-bgcolor) 378px,
         var(--main-secondary-bgcolor) 378px);
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 120px;
     background-image: linear-gradient(to bottom,
-        #FFFFFF 219px,
+        var(--fifth-bgcolor) 219px,
         var(--main-secondary-bgcolor) 219px);
   }
 }
@@ -28,13 +27,7 @@
   padding-right: 20px;
   margin: 0 auto;
   // outline: 2px solid red;
-  // background-image: linear-gradient(to bottom,
-  //   #FFFFFF 302px,
-  //   var(--main-secondary-bgcolor) 302px);
-
  
-
-
   @media screen and (min-width: 320px) {
     max-width: 320px;
   }
@@ -42,27 +35,18 @@
   @media screen and (min-width: 768px) {
     max-width: 768px;
     padding-left: 16px;
-    padding-right: 16px;
-    // background-image: linear-gradient(to bottom,
-    //       #FFFFFF 298px,
-    //       var(--main-secondary-bgcolor) 298px);
+    padding-right: 16px;    
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
-    // background-image: linear-gradient(to bottom,
-    //       #FFFFFF 99px,
-    //       var(--main-secondary-bgcolor) 99px);
-  
+    max-width: 1200px;  
   }
 }
-
 
 .contacts-cards-set {
   // width: 100%;
   display: flex;
   flex-direction: column;
-  // flex-wrap: wrap;
   row-gap: 20px;
 
   @media screen and (min-width: 768px) {
@@ -82,7 +66,7 @@
   line-height: 1.83;
   
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: var(--fifth-bgcolor);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
@@ -104,8 +88,8 @@
   
     line-height: 1.4;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
-    background: #F0D1A5;
+    color: var(--primary-text-color);
+    background: var(--fourth-bgcolor);
     border-radius: 4px;
     
     @media screen and (min-width: 768px) {
@@ -117,11 +101,10 @@
       line-height: 1.88;
       border-radius: 6px;
     }
-
      
     &--more-wide {
       max-width: 130px;
-      background-color: #C2E297;
+      background-color: var(--third-bgcolor);
 
       @media screen and (min-width: 768px) {
         max-width: 138px;
@@ -132,7 +115,7 @@
 
   &__item:not(:last-child) {
     margin-bottom: 24px;
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: 1px solid var(--contacts-border-color);
 
     @media screen and (min-width: 768px) {
       margin-bottom: 32px;
@@ -153,7 +136,7 @@
   &__description {
     margin-bottom: 24px;
     line-height: 1.5;
-    color: #907E82;
+    color: var(--third-text-color);
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       br {
@@ -189,7 +172,7 @@
 
   &__hours {
     margin-bottom: 8px;
-    color: #FFA5BA;
+    color: var(--fourth-text-color);
 
     @media screen and (min-width: 768px) {
       font-size: 14px;
@@ -211,7 +194,7 @@
   }
 
   &__tel-email {
-    color: #907E82;
+    color: var(--third-text-color);
     
     @media screen and (min-width: 768px) {
       font-size: 14px;
@@ -269,8 +252,8 @@
   font-size: 16px;
   line-height: 1.31;
 
-  color: #FFFFFF;
-  background-color: #D41342;
+  color: var(--button-first-txtcolor);
+  background-color: var(--button-first-bgcolor);
 
   transition-property: background-color;
   transition-duration: 250ms;
@@ -286,7 +269,7 @@
     padding: 0 36px 0 35px;  }
 
   &__icon {
-    stroke: #FFFFFF;
+    stroke: var(--icon-first-color);
     margin-left: 8px;
 
     @media screen and (min-width: 768px) {
@@ -300,8 +283,8 @@
 
   &--reverse-colors {
     padding: 0 31px 0 32px;
-    color: #D41443;
-    background-color: #FFFFFF;
+    color: var(--button-second-txtcolor);
+    background-color: var(--button-second-bgcolor);
 
     @media screen and (min-width: 768px) {
       min-width: 174px;
@@ -326,13 +309,13 @@
   &:hover,
   &:focus {
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: var(--button-shadow);
     transition: box-shadow var(--main-transition);
   }
 
   &--reverse-colors:hover,
   &--reverse-colors:focus {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: var(--button-shadow);
     background-color: #ECEBEB;
     transition: box-shadow var(--main-transition), background-color var(--main-transition);        
   }
@@ -384,7 +367,7 @@
   align-items: center;
   justify-content: center;
 
-  background-color: #FFF5F6;
+  background-color: var(--main-secondary-bgcolor);
 
   &__icon {
     fill: #3a3737;
