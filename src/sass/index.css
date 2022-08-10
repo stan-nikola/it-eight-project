@@ -146,7 +146,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   color: var(--primary-text-color);
-  background-color: var(--main-secondary-bgcolor);
+  background-color: var(--main-first-bgcolor);
 }
 
 button {
@@ -420,7 +420,6 @@ address {
 }
 .side-nav__buy-now-btn-icon {
   position: relative;
-  top: 2px;
 }
 .side-nav__links {
   display: flex;
@@ -430,6 +429,9 @@ address {
   display: block;
   padding: 12px var(--indent) 12px var(--indent);
   border-bottom: 1px solid var(--mobile-menu-line-color);
+  transition-property: color;
+  transition-duration: var(--transition-duration-main);
+  transition-timing-function: var(--timing-function-main);
 }
 .side-nav__link--current, .side-nav__link:hover, .side-nav__link:focus {
   outline: none;
@@ -480,6 +482,9 @@ address {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
+  transition-property: color;
+  transition-duration: var(--transition-duration-main);
+  transition-timing-function: var(--timing-function-main);
 }
 .header__nav-link--current, .header__nav-link:hover, .header__nav-link:focus {
   outline: none;
@@ -522,7 +527,6 @@ address {
 }
 .header__buy-now-btn-icon {
   position: relative;
-  top: 2px;
 }
 .header__nav-menu-btn {
   margin-left: auto;
