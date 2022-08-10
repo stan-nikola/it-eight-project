@@ -9,9 +9,9 @@
     const card = evt.target.closest('.products__item');
     if (!card) return;
 
-    const overlay = card.querySelector('.products__item-overlay');
+    const overlay = card.querySelector('.products__overlay');
     if (!overlay) return;
 
-    overlay.classList.toggle('.products__item-overlay--show');
+    overlay.classList.toggle('.products__overlay--show');
   }
 })();
