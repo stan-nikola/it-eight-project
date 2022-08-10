@@ -13,5 +13,6 @@
     if (!overlay) return;
 
     overlay.classList.toggle('products__overlay--show');
+    evt.target.classList.toggle('products__button--spinned');
   }
 })();
