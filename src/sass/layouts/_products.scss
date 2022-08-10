@@ -54,7 +54,12 @@
     } 
 }
 
-.products__item {    
+.products__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
     padding-top: 160px;
     padding-bottom: 32px;
     width: 100%;
@@ -115,7 +120,7 @@
     content: '';
     position: absolute;
     bottom: 0;
-    left: 133px;
+    left: 50%;
     transform: translateY(38px);
 
     width: 6px;
@@ -124,14 +129,6 @@
     display: block;
     background-color: var(--primary-text-color);
     box-shadow: 10px 0 var(--primary-text-color), -10px 0 var(--primary-text-color);
-
-    @media screen and (min-width: 768px) {
-        left: 105px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        left: 177px;
-    }
 }
 
 .products__name--icecream::before {
@@ -139,7 +136,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(-300px);
+    transform: translateX(-29%) translateY(-300px);
 
     width: 280px;
     height: 280px;
@@ -158,7 +155,7 @@
             }
     }
 
-    @media screen and (min-width: 320px) and (max-width: 767px) {
+    @media screen and (min-width: 320px) and (max-width: 767.9px) {
         background-image: url(../images/products/products-mob-1.png);
 
         @media (min-device-pixel-ratio: 2),
@@ -172,7 +169,7 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         top: 0;
         left: 0;
-        transform: translateY(-256px);
+        transform: translateX(-24%) translateY(-256px);
     
         width: 224px;
         height: 224px;
@@ -190,7 +187,7 @@
     @media screen and (min-width: 1200px) {
         top: 0;
         left: 0;
-        transform: translateY(-426px);
+        transform: translateX(-26%) translateY(-426px);
         
         width: 368px;
         height: 394px;
@@ -211,7 +208,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(-300px);
+    transform: translateX(-28%) translateY(-300px);
         
     width: 280px;
     height: 280px;
@@ -230,7 +227,7 @@
         }
     }
 
-    @media screen and (min-width: 320px) and (max-width: 767px) {
+    @media screen and (min-width: 320px) and (max-width: 767.9px) {
         background-image: url(../images/products/products-mob-2.png);
 
         @media (min-device-pixel-ratio: 2),
@@ -244,7 +241,7 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         top: 0;
         left: 0;
-        transform: translateY(-256px);
+        transform: translateX(-23%) translateY(-256px);
         
         width: 224px;
         height: 224px;
@@ -262,7 +259,7 @@
     @media screen and (min-width: 1200px) {
         top: 0;
         left: 0;
-        transform: translateY(-426px);
+        transform: translateX(-25%) translateY(-426px);
         
         width: 368px;
         height: 394px;
@@ -283,7 +280,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(-300px);
+    transform: translateX(-25%) translateY(-300px);
     
     width: 280px;
     height: 280px;
@@ -302,7 +299,7 @@
         }
     }
 
-    @media screen and (min-width: 320px) and (max-width: 767px) {
+    @media screen and (min-width: 320px) and (max-width: 767.9px) {
         background-image: url(../images/products/products-mob-3.png);
 
         @media (min-device-pixel-ratio: 2),
@@ -316,7 +313,7 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         top: 0;
         left: 0;
-        transform: translateY(-256px);
+        transform: translateX(-19%) translateY(-256px);
         
         width: 224px;
         height: 224px;
@@ -334,7 +331,7 @@
     @media screen and (min-width: 1200px) {
         top: 0;
         left: 0;
-        transform: translateY(-426px);
+        transform: translateX(-21%) translateY(-426px);
         
         width: 368px;
         height: 394px;
@@ -408,10 +405,10 @@
         margin-right: 164px;
     }
 
-    // Лучше такой цвет на ховере и фокусе
     &:hover,
     &:focus {
-        background-color: var(--main-secondary-bgcolor);
+        background-color: var(--button-hover-bgcolor);
+        box-shadow: var(--primary-box-shadow);
     }
 }
 
