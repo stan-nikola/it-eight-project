@@ -1,13 +1,12 @@
+.customer__reviews {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 .customer__container {
   background-color: var(--fifth-bgcolor);
-  padding-top: 60px;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 80px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 120px;
-  }
+  padding-left: 74px;
+  padding-right: 74px;
 }
 .customer__list {
   position: relative;
@@ -18,113 +17,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
-
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-
-  -webkit-touch-callout: none;
-  -khtml-user-select: none;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent;
 }
-
-.slick-list {
-  position: relative;
-
-  display: block;
-  overflow: hidden;
-
-  margin: 0;
-  padding: 0;
-}
-.slick-list:focus {
-  outline: none;
-}
-.slick-list.dragging {
-  cursor: pointer;
-  cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.slick-track {
-  position: relative;
-  top: 0;
-  left: 0;
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.slick-track:before,
-.slick-track:after {
-  display: table;
-
-  content: '';
-}
-.slick-track:after {
-  clear: both;
-}
-.slick-loading .slick-track {
-  visibility: hidden;
-}
-
-.slick-slide {
-  display: none;
-  float: left;
-
-  height: 100%;
-  min-height: 1px;
-}
-[dir='rtl'] .slick-slide {
-  float: right;
-}
-.slick-slide img {
-  display: block;
-}
-.slick-slide.slick-loading img {
-  display: none;
-}
-.slick-slide.dragging img {
-  pointer-events: none;
-}
-.slick-initialized .slick-slide {
-  display: block;
-}
-.slick-loading .slick-slide {
-  visibility: hidden;
-}
-.slick-vertical .slick-slide {
-  display: block;
-
-  height: auto;
-
-  border: 1px solid transparent;
-}
-.slick-arrow.slick-hidden {
-  display: none;
-}
-.slick-slider .slick-list {
-  position: relative;
-}
-
 .slick-dots {
   position: absolute;
+  width: 0;
   bottom: -22px;
 }
 
 .customer__img {
+  margin: 0 auto;
   border-radius: 50%;
   margin-bottom: 50px;
   @media screen and (min-width: 768px) {
@@ -144,10 +45,13 @@
   letter-spacing: 0em;
   font-family: DM Sans;
   text-align: center;
-  padding: 25px 78px 44px 85px;
+  padding: 25px 58px 44px 85px;
   margin-bottom: 16px;
-  background-color: var(--secondary-bgcolor);
   position: relative;
+  width: 100%;
+  background-color: var(--secondary-bgcolor);
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding: 37px 55px 44px 50px;
@@ -164,7 +68,29 @@
     line-height: 1.87;
     margin-bottom: 36px;
   }
-
+  &::before {
+    content: ' ';
+    position: absolute;
+    top: 12px;
+    left: 63px;
+    z-index: 1;
+    background-image: url(../images/customer-reviews/“.png);
+    width: 54px;
+    height: 40px;
+    @media screen and (min-width: 768px) {
+      width: 60px;
+      height: 40px;
+      background-image: url(../images/customer-reviews/“_tabl.png);
+      left: 6px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 61px;
+      height: 40px;
+      background-image: url(../images/customer-reviews/“_tabl.png);
+      top: 32px;
+      left: 72px;
+    }
+  }
   &::after {
     content: '';
     position: absolute;
@@ -174,7 +100,7 @@
     border-radius: 1px;
     background-color: var(--secondary-dark-color);
     bottom: 44px;
-    left: 70px;
+    left: 50px;
     box-shadow: 0px -31px 0px 0px var(--secondary-dark-color),
       0px calc(-31px * 2) 0px 0px var(--secondary-dark-color),
       0px calc(-31px * 3) 0px 0px var(--secondary-dark-color),
@@ -197,14 +123,14 @@
     }
   }
 }
-
-.customer__background-icon {
-  position: absolute;
-  left: 73px;
-  top: 12px;
-  fill: var(--secondary-dark-color);
+.customer__text {
+  display: block;
+  position: relative;
+  z-index: 5;
+  @media screen and (min-width: 768px) {
+    min-width: 512px;
+  }
 }
-
 .customer__user {
   font-family: DM Sans;
   font-size: 14px;
@@ -214,7 +140,11 @@
   text-align: center;
   color: var(--dark-text-color);
   position: relative;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 3;
   &::before {
     content: '';
     position: absolute;
