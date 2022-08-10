@@ -7,6 +7,9 @@ $tablet: 768px;
 $desktop: 1200px;
 
 .advantages {
+      @media screen and (min-width: $desktop) {
+          padding-bottom: 60px;
+        }
   background-color: var(--main-secondary-bgcolor);
 
   &__list {
@@ -29,13 +32,13 @@ $desktop: 1200px;
     @media screen and (min-width: $tablet) {
       $indent: 22px;
       $items: 3;
-      flex-basis: calc((100% - 238px - ($indent) * (($items) - 1)) / ($items));
+      flex-basis: calc((100% - 173px - ($indent) * (($items) - 1)) / ($items));
     }
 
     @media screen and (min-width: $desktop) {
       $indent: 112px;
       $items: 3;
-      flex-basis: calc((100% - 112px - ($indent) * (($items) - 1)) / ($items));
+      flex-basis: calc((100% - 79px - ($indent) * (($items) - 1)) / ($items));
     }
   }
 
@@ -84,42 +87,42 @@ $desktop: 1200px;
   &__subtitle--icon-first::before {
     width: 33px;
 
-    background-image: url(../images/advantages/advantages-1-sm.png);
+    background-image: url(../images/advantages/advantages-1.png);
 
     // Для ретіна екранів
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/advantages/advantages-1-sm@2x.png);
+      background-image: url(../images/advantages/advantages-1@2x.png);
     }
   }
 
   &__subtitle--icon-second::before {
     width: 50px;
 
-    background-image: url(../images/advantages/advantages-2-sm.png);
+    background-image: url(../images/advantages/advantages-2.png);
 
     // Для ретіна екранів
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/advantages/advantages-2-sm@2x.png);
+      background-image: url(../images/advantages/advantages-2@2x.png);
     }
   }
 
   &__subtitle--icon-third::before {
     width: 44px;
 
-    background-image: url(../images/advantages/advantages-3-sm.png);
+    background-image: url(../images/advantages/advantages-3.png);
 
     // Для ретіна екранів
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/advantages/advantages-3-sm@2x.png);
+      background-image: url(../images/advantages/advantages-3@2x.png);
     }
   }
 
@@ -136,14 +139,14 @@ $desktop: 1200px;
       max-width: 162px;
 
       font-size: 14px;
-      line-height: 1.74;
+      line-height: 1.72;
     }
 
     @media screen and (min-width: $desktop) {
       max-width: 288px;
 
       font-size: 16px;
-      line-height: 1.76;
+      line-height: 1.75;
     }
   }
 }
