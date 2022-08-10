@@ -41,6 +41,10 @@
     font-size: 16px;
     line-height: 1.31;
 
+    transition-property: color;
+    transition-duration: var(--transition-duration-main);
+    transition-timing-function: var(--timing-function-main);
+
     &--current,
     &:hover,
     &:focus {
