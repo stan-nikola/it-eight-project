@@ -7,30 +7,27 @@
 
 
     padding: 11px 37px;
+    font-weight: 700;
+    line-height: calc(18 / 14);
 
     border-radius: 22px;
+    border: none;
     cursor: pointer;
+
+    background-color: transparent;
 
     transition: background-color var(--main-transition);
 
-    &__text {
-        margin-right: 10px;
-        font-weight: 700;
-        line-height: calc(18 / 14);
-        background-color: transparent;
-
-        transition: background-color var(--main-transition);
-
-        @media screen and (min-width: 768px) {
-            font-size: 16px;
-            line-height: calc(21 / 16);
-        }
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: calc(21 / 16);
     }
-
 
     &__icon {
         width: 5px;
         height: 8px;
+
+        margin-left: 10px;
 
         transition: background-color var(--main-transition);
 
@@ -54,8 +51,6 @@
 
 .button--white:hover,
 .button--white:focus,
-.button--white:hover .button__text,
-.button--white:focus .button__text,
 .button--white:hover .button__icon,
 .button--white:focus .button__icon {
     background-color: var(--button-hover-bgcolor);
@@ -63,13 +58,11 @@
 
 .button--white:hover,
 .button--white:focus {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: var(--button-shadow);
 }
 
 .button--red:hover,
 .button--red:focus,
-.button--red:hover .button__text,
-.button--red:focus .button__text,
 .button--red:hover .button__icon,
 .button--red:focus .button__icon {
     background-color: var(--accent-slider-dot-color);
