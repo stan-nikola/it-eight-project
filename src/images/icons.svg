@@ -77,7 +77,9 @@
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M3.542 3.2 20.367 16 3.542 28.8" />
     </symbol>
     <symbol id="icon-close">
+
       <path d="m1.26 1 13.48 14M1 14.74 15 1.26" stroke="var(--icon-color)" />
+
     </symbol>
     <symbol id="icon-logo" viewBox="0 0 199 50">
       <ellipse cx="25" cy="25.5" rx="24" ry="24.5" fill="#fff" />
