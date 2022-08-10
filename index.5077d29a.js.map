@@ -1,1 +1,0 @@
-{"mappings":"AAAAA,EAAE,gBAAgBC,MAAM,CACpBC,MAAM,EACNC,QAAQ","sources":["src/js/slick.js"],"sourcesContent":["$('.single-item').slick({\n    dots: true,\n    arrows: false\n});"],"names":["$","slick","dots","arrows"],"version":3,"file":"index.5077d29a.js.map"}
