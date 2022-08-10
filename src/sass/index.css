@@ -1325,6 +1325,8 @@ table td {
   background-color: var(--primary-text-color);
   border-style: none;
   border-radius: 50%;
+  -webkit-animation: spin-in 0.5s both linear;
+          animation: spin-in 0.5s both linear;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
@@ -1344,10 +1346,60 @@ table td {
   box-shadow: var(--primary-box-shadow);
 }
 
+.products__button--spinned {
+  -webkit-animation: spin-out 0.5s both linear;
+          animation: spin-out 0.5s both linear;
+}
+
 .products__icon {
   fill: var(--accent-color);
 }
 
+@-webkit-keyframes spin-in {
+  0% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes spin-in {
+  0% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes spin-out {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes spin-out {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
 @media screen and (max-width: 767px) {
   .gallery {
     background: linear-gradient(to bottom, #FFF5F6 87px, white 87px);
