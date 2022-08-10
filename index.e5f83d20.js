@@ -1,0 +1,2 @@
+!function(){var e={openModalBtn:document.querySelectorAll("[data-modal-open-hero]"),closeModalBtn:document.querySelector("[data-modal-close-hero]"),modal:document.querySelector("[data-modal-hero]")};function o(){document.body.classList.toggle("modal-open"),e.modal.classList.toggle("is-hidden"),e.modal.classList.contains("is-hidden")||document.body.dispatchEvent(new Event("closeSideNav"))}e.openModalBtn.forEach((function(e){return e.addEventListener("click",o)})),e.closeModalBtn.addEventListener("click",o)}();
+//# sourceMappingURL=index.e5f83d20.js.map
