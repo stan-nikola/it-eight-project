@@ -450,15 +450,16 @@
 
 
   &-map {
-        max-width: 280px;
+    width: 100%;
+    max-width: 280px;
     height: 370px;
     padding: 10px;
     border-radius: 24px;
    
     @media screen and (min-width: 321px) and (max-width: 767px) {
-      width: 99%;
+      // width: 100%;
       max-width: 400px;
-      padding-left: 13px;
+      // padding-left: 13px;
     }
     
     @media screen and (min-width: 768px) {
