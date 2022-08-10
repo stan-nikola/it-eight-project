@@ -886,6 +886,12 @@ address {
   background-color: var(--primary-text-color);
 }
 
+.products__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .products__label {
   margin-bottom: 15;
   font-family: "Titan One";
@@ -947,6 +953,11 @@ address {
   padding-bottom: 32px;
   width: 100%;
   border-radius: 24px;
+}
+@media screen and (min-width: 320px) and (max-width: 767.9px) {
+  .products__item {
+    max-width: 400px;
+  }
 }
 @media screen and (min-width: 768px) {
   .products__item {
@@ -1234,6 +1245,73 @@ address {
   }
 }
 
+.products__position {
+  position: relative;
+  overflow: hidden;
+}
+
+.products__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-100%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.5;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 320px) and (max-width: 767.9px) {
+  .products__overlay {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products__overlay {
+    font-size: 16px;
+  }
+}
+
+.products__overlay--show {
+  transform: translate(0);
+}
+
+.products__overlay--bg1 {
+  background-color: var(--main-first-bgcolor);
+}
+
+.products__overlay--bg2 {
+  background-color: var(--fourth-bgcolor);
+}
+
+.products__overlay--bg3 {
+  background-color: var(--third-bgcolor);
+}
+
+table tr,
+table td {
+  padding: 10px;
+  border: 1px solid var(--primary-text-color);
+}
+@media screen and (min-width: 321px) and (max-width: 767.9px) {
+  table tr,
+table td {
+    padding: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  table tr,
+table td {
+    padding: 10px;
+  }
+}
+
 .products__button {
   display: flex;
   align-items: center;
@@ -1246,6 +1324,8 @@ address {
   background-color: var(--primary-text-color);
   border-style: none;
   border-radius: 50%;
+  -webkit-animation: spin-in 0.5s both linear;
+          animation: spin-in 0.5s both linear;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
@@ -1265,10 +1345,60 @@ address {
   box-shadow: var(--primary-box-shadow);
 }
 
+.products__button--spinned {
+  -webkit-animation: spin-out 0.5s both linear;
+          animation: spin-out 0.5s both linear;
+}
+
 .products__icon {
   fill: var(--accent-color);
 }
 
+@-webkit-keyframes spin-in {
+  0% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes spin-in {
+  0% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes spin-out {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes spin-out {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
 @media screen and (max-width: 767px) {
   .gallery {
     background: linear-gradient(to bottom, #FFF5F6 87px, white 87px);
@@ -1731,7 +1861,6 @@ address {
 
 .contacts-section {
   padding-top: 60px;
-  padding-bottom: 40px;
   background-image: linear-gradient(to bottom, var(--fifth-bgcolor) 362px, var(--main-secondary-bgcolor) 362px);
 }
 @media screen and (min-width: 768px) {
@@ -1749,13 +1878,16 @@ address {
 
 .contacts-container {
   width: 100%;
+  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  margin: 0 auto;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 321px) and (max-width: 767px) {
   .contacts-container {
-    max-width: 320px;
+    max-width: 400px;
+  }
+  .contacts-container br {
+    display: none;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1795,6 +1927,11 @@ address {
   background-color: var(--fifth-bgcolor);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+}
+@media screen and (min-width: 321px) and (max-width: 767px) {
+  .contacts-card {
+    max-width: 400px;
+  }
 }
 @media screen and (min-width: 768px) {
   .contacts-card {
@@ -2108,6 +2245,12 @@ address {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: rgb(201, 194, 194);
 }
+@media screen and (min-width: 321px) and (max-width: 767px) {
+  .contacts-modal {
+    width: 90%;
+    max-width: 400px;
+  }
+}
 @media screen and (min-width: 768px) {
   .contacts-modal {
     max-width: 500px;
@@ -2124,10 +2267,16 @@ address {
   color: #3a3737;
 }
 .contacts-modal-map {
+  width: 100%;
   max-width: 280px;
   height: 370px;
   padding: 10px;
   border-radius: 24px;
+}
+@media screen and (min-width: 321px) and (max-width: 767px) {
+  .contacts-modal-map {
+    max-width: 400px;
+  }
 }
 @media screen and (min-width: 768px) {
   .contacts-modal-map {

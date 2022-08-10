@@ -468,6 +468,7 @@ table td {
     border-style: none;
     border-radius: 50%;
 
+    animation: spin-in 0.5s both linear;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 768px) {
@@ -487,6 +488,34 @@ table td {
     }
 }
 
+.products__button--spinned {
+    animation: spin-out 0.5s both linear;
+}
+
 .products__icon {
     fill: var(--accent-color);
+}
+
+@keyframes spin-in {
+    0% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes spin-out {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
 }
