@@ -12,6 +12,6 @@
     const overlay = card.querySelector('.products__overlay');
     if (!overlay) return;
 
-    overlay.classList.toggle('.products__overlay--show');
+    overlay.classList.toggle('products__overlay--show');
   }
 })();
