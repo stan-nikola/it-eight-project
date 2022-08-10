@@ -78,6 +78,24 @@
     }
 }
 
+// .products__item.spin-card-back,
+// .products__item.spin-card-front {
+    
+// }
+
+.products__item .back,
+.products__item.spin-card-back .front {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.products__item.spin-card-back .back{
+    display: block;
+    opacity: 1;
+    transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .products__item--bg1 {
     background-color: var(--main-first-bgcolor);
 }
