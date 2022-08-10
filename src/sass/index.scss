@@ -1,14 +1,14 @@
-
 @import './utils/common';
 @import './components/button';
-@import './components/container';
 @import './components/container';
 @import './base/base';
 @import './base/vars';
 @import './utils/reset';
 @import './utils/visually-hidden';
-@import './components/index';
-@import './components/container';
+@import './components/section';
+@import './components/title';
+@import './components/subtitle';
+@import './components/button';
 
 @import './components/side-nav';
 @import './layouts/header';
@@ -19,4 +19,3 @@
 @import './layouts/advantages';
 @import './layouts/contacts';
 @import './layouts/footer';
-

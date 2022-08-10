@@ -24,12 +24,20 @@
   }
 
   &__close-btn {
+    --icon-color: var(--fifth-bgcolor);
+
     margin-left: auto;
     padding: var(--indent);
     display: block;
     margin-bottom: 26px;
     border: none;
     background-color: transparent;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      --icon-color: var(--button-hover-bgcolor);
+    }
   }
 
   &__buy-now-btn {
@@ -49,14 +57,20 @@
     border-radius: 22px;
     border: none;
 
-    &:hover {
+    transition-property: background-color box-shadow;
+    transition-duration: var(--transition-duration-main);
+    transition-timing-function: var(--timing-function-main);
+
+    &:hover,
+    &:focus {
+      outline: none;
       background-color: var(--button-hover-bgcolor);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
   }
 
   &__buy-now-btn-icon {
     position: relative;
-    top: 2px;
   }
 
   &__links {
@@ -69,8 +83,14 @@
     padding: 12px var(--indent) 12px var(--indent);
     border-bottom: 1px solid var(--mobile-menu-line-color);
 
+    transition-property: color;
+    transition-duration: var(--transition-duration-main);
+    transition-timing-function: var(--timing-function-main);
+
     &--current,
-    &:hover {
+    &:hover,
+    &:focus {
+      outline: none;
       color: var(--accent-color);
     }
 
