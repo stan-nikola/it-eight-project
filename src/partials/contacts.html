@@ -107,7 +107,7 @@
             <use href="./images/icons.svg#icon-modal-close"></use>
           </svg>
         </button>
-        <p class="contacts-modal-slogan">
+        <p class="common-modal-form-subtitle common-modal-form-subtitle--larger-font">
           Our locations: <br />
         </p>
         <p>
@@ -128,16 +128,67 @@
             <use href="./images/icons.svg#icon-modal-close"></use>
           </svg>
         </button>
-        <p class="contacts-modal-slogan">Proposal for cooperation</p>
-        <p class="contacts-modal-proposal">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          ut, maiores earum voluptatibus quae eos a distinctio fugiat
-          expedita! Voluptates quae itaque hic, ea vel nihil. Aliquam corrupti
-          libero soluta? Maiores dicta modi adipisci illum, ab neque eos,
-          voluptatem iusto fugiat explicabo illo omnis delectus nisi voluptate
-          nemo voluptas totam esse facilis! Facere nisi eligendi earum,
-          tempora asperiores atque omnis?
-        </p>
+        
+        <form class="common-modal-form" autocomplete="off">
+          <p class="common-modal-form-subtitle">
+            We are always happy to work with You! <br>
+            If you want to become our partner, leave your details and we will contact you soon
+          </p>
+
+          <label class="common-modal-form-label" for="user-name">Full name</label>
+          <div class="common-modal-form-field">
+            <input
+              class="common-modal-form-input"
+              type="text"
+              name="name"
+              id="user-name"
+              required
+            />
+            <svg class="common-modal-form-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+
+          <label class="common-modal-form-label" for="phone_number"
+            >Phone number</label
+          >
+          <div class="common-modal-form-field">
+            <input
+              class="common-modal-form-input"
+              type="tel"
+              name="tel"
+              id="phone_number"
+              required
+            />
+            <svg class="common-modal-form-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+
+          <label class="common-modal-form-label" for="user-email"
+            >Email adress</label
+          >
+          <div class="common-modal-form-field common-modal-form-field--margin-bottom">
+            <input
+              class="common-modal-form-input"
+              type="email"
+              name="email"
+              id="user-email"
+              required
+            />
+            <svg class="common-modal-form-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+    
+          <button class="button button--red common-modal-submit-btn" type="submit">
+            Send
+          </button>
+        </form>        
+
+
+   
+        
       </div>
     </div>
   </div>
