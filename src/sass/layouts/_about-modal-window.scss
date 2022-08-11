@@ -45,6 +45,10 @@ $desktop: 1200px;
 
 .about-modal {
   position: relative;
+  max-width: 450px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
   padding: 40px;
   z-index: 100;
   background: #ffffff;
