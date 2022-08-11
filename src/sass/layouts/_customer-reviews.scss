@@ -5,23 +5,40 @@
 }
 .customer__container {
   background-color: var(--fifth-bgcolor);
-  padding-left: 74px;
-  padding-right: 74px;
 }
 .customer__list {
   position: relative;
 }
-.slick-slider {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+.custom-slick-dot {
+  position: absolute;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--main-slider-dot-color);
 }
 .slick-dots {
-  position: absolute;
-  width: 0;
-  bottom: -22px;
+  left: 0;
+  transform: translateY(15px);
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: var(--accent-slider-dot-color);
+    top: -60px;
+    left: 51%;
+    box-shadow: 14px 0px 0px 0px var(--accent-slider-dot-color),
+      -14px 0px 0px 0px var(--accent-slider-dot-color);
+    @media screen and (min-width: 768px) {
+      top: -73px;
+      left: 50.5%;
+    }
+  }
 }
 
 .customer__img {
@@ -36,7 +53,7 @@
   }
 }
 .customer__comment {
-  display: block;
+  display: flex;
   color: var(--dark-text-color);
   font-family: DM Sans;
   font-size: 12px;
@@ -44,25 +61,26 @@
   line-height: 2.58;
   letter-spacing: 0em;
   font-family: DM Sans;
-  text-align: center;
-  padding: 25px 58px 44px 85px;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 16px;
   position: relative;
-  width: 100%;
   background-color: var(--secondary-bgcolor);
   margin-left: auto;
   margin-right: auto;
+  padding: 25px 58px 44px 65px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding: 37px 55px 44px 50px;
+    padding: 37px 50px 44px 55px;
     background-color: var(--fifth-bgcolor);
-    width: 620px;
+    // width: 620px;
     font-size: 14px;
     line-height: 2.16;
     letter-spacing: 0.04em;
+    margin-bottom: 24px;
   }
   @media screen and (min-width: 1200px) {
-    padding: 47px 109px 39px 109px;
+    padding: 35px 74px 35px 72px;
     width: 968px;
     font-size: 16px;
     line-height: 1.87;
@@ -72,23 +90,25 @@
     content: ' ';
     position: absolute;
     top: 12px;
-    left: 63px;
+    left: 53px;
     z-index: 1;
     background-image: url(../images/customer-reviews/“.png);
+    background-repeat: no-repeat;
     width: 54px;
     height: 40px;
     @media screen and (min-width: 768px) {
       width: 60px;
       height: 40px;
       background-image: url(../images/customer-reviews/“_tabl.png);
-      left: 6px;
+      left: 46px;
+      top: 20px;
     }
     @media screen and (min-width: 1200px) {
       width: 61px;
       height: 40px;
       background-image: url(../images/customer-reviews/“_tabl.png);
-      top: 32px;
-      left: 72px;
+      top: 17px;
+      left: 90px;
     }
   }
   &::after {
@@ -111,13 +131,13 @@
 
     @media screen and (min-width: 768px) {
       width: 608px;
-      left: 6px;
+      left: 46px;
       box-shadow: 0px -30px 0px 0px var(--secondary-dark-color),
         0px calc(-30px * 2) 0px 0px var(--secondary-dark-color);
     }
     @media screen and (min-width: 1200px) {
-      width: 821px;
-      left: 73px;
+      width: 800px;
+      left: 90px;
       bottom: 40px;
       box-shadow: 0px -31px 0px 0px var(--secondary-dark-color);
     }
@@ -127,8 +147,14 @@
   display: block;
   position: relative;
   z-index: 5;
+  text-align: center;
   @media screen and (min-width: 768px) {
-    min-width: 512px;
+    width: 527px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 822px;
+    padding-left: 52px;
+    padding-right: 52px;
   }
 }
 .customer__user {
@@ -145,17 +171,4 @@
   align-items: center;
   position: relative;
   z-index: 3;
-  &::before {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    height: 4px;
-    width: 4px;
-    border-radius: 50%;
-    background-color: var(--accent-slider-dot-color);
-    top: -18px;
-    left: 50%;
-    box-shadow: 14px 0px 0px 0px var(--accent-slider-dot-color),
-      -14px 0px 0px 0px var(--accent-slider-dot-color);
-  }
 }

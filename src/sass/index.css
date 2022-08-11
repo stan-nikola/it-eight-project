@@ -7,19 +7,16 @@
   width: 176px;
   height: 44px;
   padding: 11px 37px;
-  border-radius: 22px;
-  cursor: pointer;
-  transition: background-color var(--main-transition);
-}
-.button__text {
-  margin-right: 10px;
   font-weight: 700;
   line-height: 1.2857142857;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
   background-color: transparent;
   transition: background-color var(--main-transition);
 }
 @media screen and (min-width: 768px) {
-  .button__text {
+  .button {
     font-size: 16px;
     line-height: 1.3125;
   }
@@ -27,6 +24,7 @@
 .button__icon {
   width: 5px;
   height: 8px;
+  margin-left: 10px;
   transition: background-color var(--main-transition);
 }
 
@@ -44,8 +42,6 @@
 
 .button--white:hover,
 .button--white:focus,
-.button--white:hover .button__text,
-.button--white:focus .button__text,
 .button--white:hover .button__icon,
 .button--white:focus .button__icon {
   background-color: var(--button-hover-bgcolor);
@@ -53,13 +49,11 @@
 
 .button--white:hover,
 .button--white:focus {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--button-shadow);
 }
 
 .button--red:hover,
 .button--red:focus,
-.button--red:hover .button__text,
-.button--red:focus .button__text,
 .button--red:hover .button__icon,
 .button--red:focus .button__icon {
   background-color: var(--accent-slider-dot-color);
@@ -147,7 +141,6 @@ body {
   font-weight: 500;
   font-size: 14px;
   color: var(--primary-text-color);
-  background-color: var(--main-first-bgcolor);
 }
 
 button {
@@ -242,7 +235,12 @@ address {
 
 .section {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 60px;
+  }
 }
 
 .title {
@@ -301,19 +299,16 @@ address {
   width: 176px;
   height: 44px;
   padding: 11px 37px;
-  border-radius: 22px;
-  cursor: pointer;
-  transition: background-color var(--main-transition);
-}
-.button__text {
-  margin-right: 10px;
   font-weight: 700;
   line-height: 1.2857142857;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
   background-color: transparent;
   transition: background-color var(--main-transition);
 }
 @media screen and (min-width: 768px) {
-  .button__text {
+  .button {
     font-size: 16px;
     line-height: 1.3125;
   }
@@ -321,6 +316,7 @@ address {
 .button__icon {
   width: 5px;
   height: 8px;
+  margin-left: 10px;
   transition: background-color var(--main-transition);
 }
 
@@ -338,8 +334,6 @@ address {
 
 .button--white:hover,
 .button--white:focus,
-.button--white:hover .button__text,
-.button--white:focus .button__text,
 .button--white:hover .button__icon,
 .button--white:focus .button__icon {
   background-color: var(--button-hover-bgcolor);
@@ -347,13 +341,11 @@ address {
 
 .button--white:hover,
 .button--white:focus {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--button-shadow);
 }
 
 .button--red:hover,
 .button--red:focus,
-.button--red:hover .button__text,
-.button--red:focus .button__text,
 .button--red:hover .button__icon,
 .button--red:focus .button__icon {
   background-color: var(--accent-slider-dot-color);
@@ -725,6 +717,9 @@ address {
   transform: translateY(100%);
   background-color: var(--fifth-bgcolor);
   border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: var(--transition-duration-main);
+  transition-timing-function: var(--timing-function-main);
 }
 .hero__feature-link:hover, .hero__feature-link:focus {
   outline: none;
@@ -765,15 +760,23 @@ address {
   position: relative;
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .hero__content-right {
     display: block;
   }
 }
-.hero__statistic-list {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+@media screen and (min-width: 500px) and (max-width: 767.9px) {
+  .hero__content-right {
+    left: -40px;
+    bottom: -37px;
+  }
+}
+@media (min-width: 500px) {
+  .hero__statistic-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 .hero__statistic-list-item {
   position: relative;
@@ -788,7 +791,7 @@ address {
   border-radius: 50%;
   background-color: var(--fifth-bgcolor);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .hero__statistic-list-item::before {
     width: 16px;
     height: 16px;
@@ -807,7 +810,7 @@ address {
   color: var(--accent-color);
   line-height: 1.15;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .hero__statistic-item-value {
     margin-right: 8px;
     margin-top: -16px;
@@ -825,7 +828,7 @@ address {
   font-weight: 400;
   color: var(--primary-text-color);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .hero__statistic-item-text {
     margin-right: 8px;
     margin-top: 2px;
@@ -868,6 +871,14 @@ address {
   position: absolute;
   bottom: 0px;
   right: 0;
+}
+@media screen and (min-width: 500px) {
+  .hero__secondary-img {
+    display: block;
+    bottom: -120px;
+    width: 190px;
+    height: 150px;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero__secondary-img {
@@ -1325,8 +1336,8 @@ table td {
   background-color: var(--primary-text-color);
   border-style: none;
   border-radius: 50%;
-  -webkit-animation: spin-in 0.5s both linear;
-          animation: spin-in 0.5s both linear;
+  -webkit-animation: spin-in 0.25s both linear;
+          animation: spin-in 0.25s both linear;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
@@ -1347,8 +1358,8 @@ table td {
 }
 
 .products__button--spinned {
-  -webkit-animation: spin-out 0.5s both linear;
-          animation: spin-out 0.5s both linear;
+  -webkit-animation: spin-out 0.25s both linear;
+          animation: spin-out 0.25s both linear;
 }
 
 .products__icon {
@@ -1612,45 +1623,43 @@ table td {
 
 .about {
   background-color: var(--main-secondary-bgcolor);
+  background-image: url(../images/about/about_fon-mobile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 570px;
+  background-position-x: center;
 }
-
-@media screen and (max-width: 767px) {
-  .about__wrapper {
-    background-image: url(../images/about/about_fon-mobile.png);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position-y: 340px;
-    background-position-x: center;
-  }
-}
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .about__wrapper {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .about {
     background-image: url(../images/about/about_fon-mobile@2x.png);
   }
 }
-@media screen and (max-width: 767px) and (min-width: 352px) and (max-width: 767px) {
+@media screen and (min-width: 768px) {
+  .about {
+    background-image: url(../images/about/about_fon-desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 236px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .about {
+    background-image: url(../images/about/about_fon-desktop@2x.png);
+  }
+}
+
+@media screen and (min-width: 352px) and (max-width: 767px) {
   .about__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-position-x: calc(50% + 32px);
+    background-position-x: calc(50% + 20px);
   }
 }
 @media screen and (min-width: 768px) {
   .about__wrapper {
     display: flex;
-  }
-}
-@media screen and (min-width: 768px) {
-  .about__wrapper {
-    background-image: url(../images/about/about_fon-desktop.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .about__wrapper {
-    background-image: url(../images/about/about_fon-desktop@2x.png);
   }
 }
 
@@ -2303,26 +2312,42 @@ table td {
 
 .customer__container {
   background-color: var(--fifth-bgcolor);
-  padding-left: 74px;
-  padding-right: 74px;
 }
 
 .customer__list {
   position: relative;
 }
 
-.slick-slider {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.custom-slick-dot {
+  position: absolute;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--main-slider-dot-color);
 }
 
 .slick-dots {
+  left: 0;
+  transform: translateY(15px);
+}
+.slick-dots::before {
+  content: "";
   position: absolute;
-  width: 0;
-  bottom: -22px;
+  display: inline-block;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: var(--accent-slider-dot-color);
+  top: -60px;
+  left: 51%;
+  box-shadow: 14px 0px 0px 0px var(--accent-slider-dot-color), -14px 0px 0px 0px var(--accent-slider-dot-color);
+}
+@media screen and (min-width: 768px) {
+  .slick-dots::before {
+    top: -73px;
+    left: 50.5%;
+  }
 }
 
 .customer__img {
@@ -2342,7 +2367,7 @@ table td {
 }
 
 .customer__comment {
-  display: block;
+  display: flex;
   color: var(--dark-text-color);
   font-family: DM Sans;
   font-size: 12px;
@@ -2350,28 +2375,28 @@ table td {
   line-height: 2.58;
   letter-spacing: 0em;
   font-family: DM Sans;
-  text-align: center;
-  padding: 25px 58px 44px 85px;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 16px;
   position: relative;
-  width: 100%;
   background-color: var(--secondary-bgcolor);
   margin-left: auto;
   margin-right: auto;
+  padding: 25px 58px 44px 65px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .customer__comment {
-    padding: 37px 55px 44px 50px;
+    padding: 37px 50px 44px 55px;
     background-color: var(--fifth-bgcolor);
-    width: 620px;
     font-size: 14px;
     line-height: 2.16;
     letter-spacing: 0.04em;
+    margin-bottom: 24px;
   }
 }
 @media screen and (min-width: 1200px) {
   .customer__comment {
-    padding: 47px 109px 39px 109px;
+    padding: 35px 74px 35px 72px;
     width: 968px;
     font-size: 16px;
     line-height: 1.87;
@@ -2382,9 +2407,10 @@ table td {
   content: " ";
   position: absolute;
   top: 12px;
-  left: 63px;
+  left: 53px;
   z-index: 1;
   background-image: url(../images/customer-reviews/“.png);
+  background-repeat: no-repeat;
   width: 54px;
   height: 40px;
 }
@@ -2393,7 +2419,8 @@ table td {
     width: 60px;
     height: 40px;
     background-image: url(../images/customer-reviews/“_tabl.png);
-    left: 6px;
+    left: 46px;
+    top: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2401,8 +2428,8 @@ table td {
     width: 61px;
     height: 40px;
     background-image: url(../images/customer-reviews/“_tabl.png);
-    top: 32px;
-    left: 72px;
+    top: 17px;
+    left: 90px;
   }
 }
 .customer__comment::after {
@@ -2420,14 +2447,14 @@ table td {
 @media screen and (min-width: 768px) {
   .customer__comment::after {
     width: 608px;
-    left: 6px;
+    left: 46px;
     box-shadow: 0px -30px 0px 0px var(--secondary-dark-color), 0px -60px 0px 0px var(--secondary-dark-color);
   }
 }
 @media screen and (min-width: 1200px) {
   .customer__comment::after {
-    width: 821px;
-    left: 73px;
+    width: 800px;
+    left: 90px;
     bottom: 40px;
     box-shadow: 0px -31px 0px 0px var(--secondary-dark-color);
   }
@@ -2437,10 +2464,18 @@ table td {
   display: block;
   position: relative;
   z-index: 5;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .customer__text {
-    min-width: 512px;
+    width: 527px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customer__text {
+    width: 822px;
+    padding-left: 52px;
+    padding-right: 52px;
   }
 }
 
@@ -2459,18 +2494,6 @@ table td {
   position: relative;
   z-index: 3;
 }
-.customer__user::before {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  height: 4px;
-  width: 4px;
-  border-radius: 50%;
-  background-color: var(--accent-slider-dot-color);
-  top: -18px;
-  left: 50%;
-  box-shadow: 14px 0px 0px 0px var(--accent-slider-dot-color), -14px 0px 0px 0px var(--accent-slider-dot-color);
-}
 
 .footer {
   font-family: "Titan One";
@@ -2478,10 +2501,10 @@ table td {
   background-color: var(--main-secondary-bgcolor);
 }
 .footer__box {
-  max-width: 320px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px 20px;
+  padding: 0px 20px 40px 20px;
 }
 @media screen and (min-width: 768px) {
   .footer__box {
@@ -2493,7 +2516,8 @@ table td {
 @media screen and (min-width: 1200px) {
   .footer__box {
     max-width: 1200px;
-    padding: 120px 16px 60px 16px;
+    padding-top: 80px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
