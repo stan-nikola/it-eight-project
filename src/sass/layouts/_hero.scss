@@ -220,15 +220,23 @@
     position: relative;
     display: none;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 500px) {
       display: block;
+      @media screen and(max-width:767.9px){
+        left: -40px;
+        bottom: -37px;
+      }
     }
   }
 
   &__statistic-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+   
+
+    @media (min-width:500px){
+display: flex;
+  flex-direction: column;
+  gap: 15px;
+    }
   }
 
   &__statistic-list-item {
@@ -244,7 +252,7 @@
       border-radius: 50%;
       background-color: var(--fifth-bgcolor);
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 500px) {
         width: 16px;
         height: 16px;
       }
@@ -263,7 +271,7 @@
     color: var(--accent-color);
     line-height: 1.15;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 500px) {
       margin-right: 8px;
       margin-top: -16px;
       font-size: 28px;
@@ -280,7 +288,7 @@
     font-weight: 400;
     color: var(--primary-text-color);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 500px) {
       margin-right: 8px;
       margin-top: 2px;
       font-size: 8px;
@@ -321,6 +329,14 @@
     position: absolute;
     bottom: 0px;
     right: 0;
+
+
+    @media screen and (min-width: 500px) {
+      display: block;
+        bottom: -120px;
+        width: 190px;
+        height: 150px;
+      }
 
     @media screen and (min-width: 768px) {
       bottom: -18px;
