@@ -8,7 +8,7 @@ $desktop: 1200px;
 
 
 
-.hero-backdrop {
+.about-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -29,7 +29,7 @@ $desktop: 1200px;
     visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-backdrop.is-hidden {
+.about-backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -61,7 +61,7 @@ $desktop: 1200px;
     transform: translateX(-50%) translateY(-50%);
 
     width: 478px;
-        height: 581px;
+    height: 581px;
   }
 
 }
@@ -139,7 +139,6 @@ $desktop: 1200px;
   font-size: 14px;
   color: var(--light-dark-text-color);
   text-transform: none;
-  max-width: 120px;
 }
 
 .about-modal-btn {
@@ -160,20 +159,37 @@ $desktop: 1200px;
 }
 
 .about-modal-btn::after {
-  content: '';
+    content: '';
+display: none;
 
-  display: block;
-  position: absolute;
-  top: 150%;
-  left: -70%;
-  width: 640px;
-  height: 195px;
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 
-  background-image: url(../images/about-modal-window/about-modal-window-1.png);
+            @media screen and (min-width: $tablet) {
+        display: block;
+        position: absolute;
+            top: 150%;
+            left: -70%;
+            width: 640px;
+            height: 195px;
+        
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        
+            background-image: url(../images/about-modal-window/about-modal-window-1.png);
+        
+        
+            // Для ретіна екранів
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/about-modal-window/about-modal-window-1@2x.png);
+            }
+                }
+
+
+
 }
 
 
