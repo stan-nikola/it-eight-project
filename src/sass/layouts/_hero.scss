@@ -179,6 +179,10 @@
     background-color: var(--fifth-bgcolor);
     border-radius: 50%;
 
+    transition-property: background-color;
+    transition-duration: var(--transition-duration-main);
+    transition-timing-function: var(--timing-function-main);
+
     &:hover,
     &:focus {
       outline: none;
