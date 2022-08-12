@@ -61,7 +61,6 @@
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding: 37px 50px 44px 55px;
-    background-color: var(--fifth-bgcolor);
     // width: 620px;
     font-size: 14px;
     line-height: 2.16;
@@ -123,12 +122,12 @@
     width: 4px;
     border-radius: 50%;
     background-color: var(--accent-slider-dot-color);
-    bottom: -46px;
+    bottom: -54px;
     left: 47%;
     box-shadow: 14px 0px 0px 0px var(--accent-slider-dot-color),
       -14px 0px 0px 0px var(--accent-slider-dot-color);
     @media screen and (min-width: 768px) {
-      bottom: -40px;
+      bottom: -55px;
       left: 50.3%;
     }
     @media screen and (min-width: 1200px) {
