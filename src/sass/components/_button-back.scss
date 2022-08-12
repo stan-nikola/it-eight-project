@@ -1,0 +1,30 @@
+.button-back {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 2;
+    rotate: -90deg;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: var(--light-dark-text-color);
+
+    animation: spin-in 0.25s both linear;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--button-hover-bgcolor);
+        box-shadow: var(--primary-box-shadow);
+    }
+}
